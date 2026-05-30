@@ -1,0 +1,1598 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Koniec z wieczornym podjadaniem – Kompletna oferta premium</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #FAF6F1;
+    --warm-white: #FDF9F5;
+    --dusty-rose: #C9897A;
+    --rose-deep: #A86553;
+    --sage: #8A9E8C;
+    --sage-light: #B5C9B7;
+    --charcoal: #2C2C2C;
+    --mid: #5A5A5A;
+    --light: #8A8A8A;
+    --border: #E8DDD5;
+    --gold: #C4A96D;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--cream);
+    color: var(--charcoal);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.8;
+  }
+
+  /* COVER */
+  .cover {
+    background: var(--charcoal);
+    color: var(--cream);
+    padding: 100px 60px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .cover::before {
+    content: '';
+    position: absolute;
+    top: -100px; right: -100px;
+    width: 500px; height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(201,137,122,0.2) 0%, transparent 70%);
+  }
+  .cover::after {
+    content: '';
+    position: absolute;
+    bottom: -80px; left: -80px;
+    width: 400px; height: 400px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(138,158,140,0.15) 0%, transparent 70%);
+  }
+  .cover-tag {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--dusty-rose);
+    margin-bottom: 40px;
+  }
+  .cover h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(42px, 6vw, 72px);
+    font-weight: 300;
+    line-height: 1.15;
+    margin-bottom: 24px;
+    max-width: 800px;
+  }
+  .cover h1 em {
+    font-style: italic;
+    color: var(--dusty-rose);
+  }
+  .cover-sub {
+    font-size: 18px;
+    color: rgba(250,246,241,0.7);
+    max-width: 600px;
+    margin-bottom: 60px;
+    font-weight: 300;
+  }
+  .cover-price {
+    display: inline-block;
+    border: 1px solid var(--gold);
+    padding: 16px 40px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    color: var(--gold);
+    letter-spacing: 2px;
+  }
+  .cover-meta {
+    margin-top: 80px;
+    padding-top: 40px;
+    border-top: 1px solid rgba(250,246,241,0.15);
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(250,246,241,0.4);
+  }
+
+  /* LAYOUT */
+  .page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 80px 40px;
+  }
+
+  /* SECTION HEADERS */
+  .section-number {
+    font-size: 11px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--dusty-rose);
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(32px, 4vw, 52px);
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 48px;
+    color: var(--charcoal);
+  }
+  .section-title em {
+    font-style: italic;
+    color: var(--dusty-rose);
+  }
+
+  /* DIVIDERS */
+  .divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 80px 0;
+  }
+
+  /* CARDS */
+  .card {
+    background: var(--warm-white);
+    border: 1px solid var(--border);
+    padding: 40px;
+    margin-bottom: 24px;
+  }
+  .card-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    color: var(--charcoal);
+  }
+  .card-num {
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--dusty-rose);
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+
+  /* TEXT */
+  p { margin-bottom: 20px; color: var(--mid); font-size: 16px; }
+  p strong { color: var(--charcoal); font-weight: 500; }
+  .lead {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(20px, 2.5vw, 28px);
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.6;
+    color: var(--charcoal);
+    margin-bottom: 40px;
+  }
+  .emotional-block {
+    border-left: 3px solid var(--dusty-rose);
+    padding: 24px 32px;
+    margin: 40px 0;
+    background: rgba(201,137,122,0.06);
+  }
+  .emotional-block p { font-size: 17px; line-height: 1.9; }
+
+  /* LISTS */
+  ul.custom, ol.custom {
+    list-style: none;
+    padding: 0;
+    margin: 24px 0 32px;
+  }
+  ul.custom li {
+    padding: 10px 0 10px 28px;
+    position: relative;
+    color: var(--mid);
+    border-bottom: 1px solid var(--border);
+    font-size: 15px;
+  }
+  ul.custom li:last-child { border-bottom: none; }
+  ul.custom li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--dusty-rose);
+  }
+  ol.custom { counter-reset: item; }
+  ol.custom li {
+    counter-increment: item;
+    padding: 12px 0 12px 48px;
+    position: relative;
+    color: var(--mid);
+    border-bottom: 1px solid var(--border);
+    font-size: 15px;
+  }
+  ol.custom li:last-child { border-bottom: none; }
+  ol.custom li::before {
+    content: counter(item, decimal-leading-zero);
+    position: absolute;
+    left: 0;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    color: var(--dusty-rose);
+    top: 10px;
+  }
+
+  /* NAME PROPOSALS */
+  .name-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 32px 0;
+  }
+  .name-card {
+    background: var(--warm-white);
+    border: 1px solid var(--border);
+    padding: 32px;
+    position: relative;
+  }
+  .name-card .num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    color: var(--border);
+    line-height: 1;
+    margin-bottom: 12px;
+  }
+  .name-card .name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--charcoal);
+    margin-bottom: 8px;
+    line-height: 1.3;
+  }
+  .name-card .tagline {
+    font-size: 13px;
+    color: var(--light);
+    font-style: italic;
+  }
+  .name-card:nth-child(5) {
+    grid-column: 1 / -1;
+    background: var(--charcoal);
+  }
+  .name-card:nth-child(5) .num { color: rgba(255,255,255,0.1); }
+  .name-card:nth-child(5) .name { color: var(--cream); }
+  .name-card:nth-child(5) .tagline { color: var(--dusty-rose); }
+
+  /* MEETING CARDS */
+  .meeting {
+    background: var(--warm-white);
+    border: 1px solid var(--border);
+    margin-bottom: 40px;
+    overflow: hidden;
+  }
+  .meeting-header {
+    background: var(--charcoal);
+    color: var(--cream);
+    padding: 32px 40px;
+  }
+  .meeting-num {
+    font-size: 11px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--dusty-rose);
+    margin-bottom: 8px;
+  }
+  .meeting-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-weight: 300;
+  }
+  .meeting-body {
+    padding: 40px;
+  }
+  .meeting-section {
+    margin-bottom: 28px;
+  }
+  .meeting-section h4 {
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--dusty-rose);
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+
+  /* WORKBOOK */
+  .workbook-section {
+    background: var(--warm-white);
+    border: 1px solid var(--border);
+    padding: 48px;
+    margin-bottom: 32px;
+  }
+  .workbook-section h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 24px;
+    color: var(--charcoal);
+  }
+  .exercise-box {
+    background: white;
+    border: 1px solid var(--border);
+    padding: 28px;
+    margin: 20px 0;
+  }
+  .exercise-label {
+    font-size: 10px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--sage);
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+  .write-line {
+    border-bottom: 1px solid var(--border);
+    height: 32px;
+    margin: 8px 0;
+  }
+
+  /* INSTAGRAM POSTS */
+  .posts-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 32px 0;
+  }
+  .post-card {
+    background: var(--warm-white);
+    border: 1px solid var(--border);
+    padding: 28px;
+  }
+  .post-num {
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--dusty-rose);
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+  .post-text {
+    font-size: 14px;
+    color: var(--mid);
+    line-height: 1.8;
+  }
+
+  /* FAQ */
+  .faq-item {
+    border-bottom: 1px solid var(--border);
+    padding: 28px 0;
+  }
+  .faq-q {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--charcoal);
+    margin-bottom: 12px;
+  }
+  .faq-a {
+    font-size: 15px;
+    color: var(--mid);
+    line-height: 1.8;
+  }
+
+  /* HOOKS */
+  .hook-item {
+    padding: 20px 28px;
+    background: var(--warm-white);
+    border-left: 3px solid var(--sage);
+    margin-bottom: 12px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 19px;
+    font-style: italic;
+    color: var(--charcoal);
+  }
+
+  /* SUPPORT SENTENCES */
+  .support-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    margin: 32px 0;
+  }
+  .support-card {
+    background: var(--warm-white);
+    border: 1px solid var(--border);
+    padding: 24px;
+    font-size: 14px;
+    color: var(--mid);
+    line-height: 1.7;
+    font-style: italic;
+  }
+  .support-card::before {
+    content: '"';
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    color: var(--dusty-rose);
+    opacity: 0.5;
+    display: block;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+
+  /* CTA */
+  .cta-block {
+    background: var(--charcoal);
+    color: var(--cream);
+    padding: 80px 60px;
+    text-align: center;
+    margin: 80px 0;
+  }
+  .cta-block h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 42px;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+  .cta-block p {
+    color: rgba(250,246,241,0.7);
+    max-width: 500px;
+    margin: 0 auto 40px;
+  }
+  .cta-btn {
+    display: inline-block;
+    background: var(--dusty-rose);
+    color: white;
+    padding: 18px 56px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  /* HIGHLIGHT BOX */
+  .highlight {
+    background: rgba(201,137,122,0.08);
+    border: 1px solid rgba(201,137,122,0.3);
+    padding: 32px 40px;
+    margin: 32px 0;
+  }
+  .highlight p { color: var(--charcoal); font-size: 17px; }
+
+  /* TRANSFORMATION */
+  .transform-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin: 40px 0;
+  }
+  .transform-col h4 {
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+  .transform-col.before h4 { color: var(--light); }
+  .transform-col.after h4 { color: var(--sage); }
+  .transform-col ul { list-style: none; padding: 0; }
+  .transform-col ul li {
+    padding: 8px 0;
+    font-size: 15px;
+    color: var(--mid);
+    border-bottom: 1px solid var(--border);
+  }
+  .transform-col.before ul li::before { content: '✕ '; color: var(--light); }
+  .transform-col.after ul li::before { content: '✓ '; color: var(--sage); }
+
+  /* STORIES */
+  .story-card {
+    background: var(--charcoal);
+    color: var(--cream);
+    padding: 40px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .story-day {
+    font-size: 10px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--dusty-rose);
+    margin-bottom: 16px;
+  }
+  .story-text {
+    font-size: 15px;
+    line-height: 1.8;
+    color: rgba(250,246,241,0.85);
+  }
+  .story-cta {
+    margin-top: 20px;
+    font-size: 13px;
+    color: var(--gold);
+    font-style: italic;
+  }
+
+  /* PAGE BREAK helper */
+  .section-break {
+    height: 1px;
+    background: var(--border);
+    margin: 100px 0;
+  }
+
+  @media (max-width: 700px) {
+    .cover { padding: 60px 28px; }
+    .page { padding: 60px 24px; }
+    .name-grid, .posts-grid, .transform-grid, .support-grid { grid-template-columns: 1fr; }
+    .name-card:nth-child(5) { grid-column: 1; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══ COVER ═══ -->
+<div class="cover">
+  <div class="cover-tag">Kompletna oferta premium · Program transformacyjny dla kobiet</div>
+  <h1>Koniec z wieczornym<br><em>podjadaniem</em></h1>
+  <p class="cover-sub">Jak przestać zaczynać dietę od poniedziałku i odzyskać kontrolę nad jedzeniem — bez restrykcji, bez wyrzutów sumienia, bez zaczynania od nowa.</p>
+  <div class="cover-price">1 599 zł · Program premium</div>
+  <div class="cover-meta">4 spotkania stacjonarne · Kameralna grupa · Wsparcie emocjonalne · Workbook premium</div>
+</div>
+
+<!-- ═══ SEKCJA 1: NAZWY ═══ -->
+<div class="page">
+  <div class="section-number">Sekcja 01</div>
+  <h2 class="section-title">Propozycje nazwy<br><em>programu premium</em></h2>
+
+  <div class="name-grid">
+    <div class="name-card">
+      <div class="num">01</div>
+      <div class="name">Wieczorna Cisza</div>
+      <div class="tagline">Jak skończyć z jedzeniem ze zmęczenia i odnaleźć spokój z własnym ciałem</div>
+    </div>
+    <div class="name-card">
+      <div class="num">02</div>
+      <div class="name">Ostatni Poniedziałek</div>
+      <div class="tagline">Program dla kobiet, które mają dość zaczynania od nowa</div>
+    </div>
+    <div class="name-card">
+      <div class="num">03</div>
+      <div class="name">Po Zmierzchu</div>
+      <div class="tagline">Transformacja relacji z jedzeniem — od wieczornego chaosu do wewnętrznego spokoju</div>
+    </div>
+    <div class="name-card">
+      <div class="num">04</div>
+      <div class="name">Koniec z Poniedziałkiem</div>
+      <div class="tagline">Głęboka praca z emocjonalnym jedzeniem dla kobiet gotowych na prawdziwą zmianę</div>
+    </div>
+    <div class="name-card">
+      <div class="num">05</div>
+      <div class="name">Spokój na Talerzu</div>
+      <div class="tagline">Program psychodietetyczny — jak wyjść z błędnego koła diet i odzyskać siebie</div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider" style="max-width:900px;margin:0 auto 80px;">
+
+<!-- ═══ SEKCJA 2: OPIS PROBLEMU ═══ -->
+<div class="page">
+  <div class="section-number">Sekcja 02</div>
+  <h2 class="section-title">Emocjonalny opis<br><em>problemu klientki</em></h2>
+
+  <p class="lead">„To jest dokładnie moje życie." — to zdanie, które chcemy, żeby każda kobieta poczuła czytając te słowa.</p>
+
+  <div class="emotional-block">
+    <p>Rano wstajesz z postanowieniem. Dzisiaj będzie inaczej. Pijesz wodę z cytryną, jesz śniadanie bez cukru, odmawiasz sobie tego kawałka ciasta w pracy. Jesteś dumna z siebie. Trzymasz się.</p>
+    <p>Ale gdzieś między godziną 18 a 22 coś pęka.</p>
+    <p>Nie wiesz dokładnie kiedy. Wchodzisz do kuchni po szklankę wody — i nagle stoisz przed otwartą lodówką. Albo siedzisz na kanapie po tym długim, wyczerpującym dniu i sięgasz po te chrupki. Jeden garść. Potem druga. Potem kawałek czekolady, bo przecież "i tak już wszystko zepsułam".</p>
+    <p>I znowu to uczucie. To znajome, ciężkie uczucie w brzuchu — nie tylko od jedzenia. To ciężar wyrzutów sumienia. Znowu. Jak zawsze.</p>
+  </div>
+
+  <p>Mówisz sobie: <strong>„Od poniedziałku zaczynam na nowo."</strong> I naprawdę w to wierzysz. Bo jesteś kobietą, która się stara. Która daje z siebie wszystko — w pracy, w domu, dla rodziny, dla innych. Która czyta o zdrowym odżywianiu, zna zasady, wie co powinna jeść.</p>
+
+  <p>I właśnie dlatego jest ci tak ciężko. Bo rozumem wiesz wszystko — a wieczorem i tak jesz. I nie możesz tego zrozumieć. Czujesz się słaba. Pozbawiona silnej woli. Myślisz: <strong>„Co ze mną jest nie tak?"</strong></p>
+
+  <div class="emotional-block">
+    <p>Jest coś, czego nikt ci nie powiedział: <strong>to nie jest kwestia silnej woli.</strong></p>
+    <p>To nie jest kwestia wiedzy o kaloriach. To nie jest kwestia braku dyscypliny. To jest kwestia czegoś głębszego — zmęczenia, które zbiera się przez cały dzień jak woda w zbiorniku, napięcia, które gdzieś musi znaleźć ujście, emocji, które nie mają innego wyjścia niż jedzenie.</p>
+    <p>Twoje ciało i umysł szukają ulgi. I jedyne, czego się nauczyły, to sięgać po jedzenie. Bo kiedyś to działało. Bo nikt nie pokazał ci, że może być inaczej.</p>
+  </div>
+
+  <p>Jesteś zmęczona po całym dniu dbania o wszystkich innych. Zmęczona decyzjami, zmęczona rolami, zmęczona pilnowaniem siebie. Wieczór to jedyny moment, który jest twój. I w tym momencie — jedyna rzecz, po którą sięgasz, żeby poczuć się lepiej, to jedzenie.</p>
+
+  <p>Nie dlatego, że jesteś słaba.<br>
+  Dlatego, że nikt jeszcze nie pomógł ci znaleźć czegoś innego.</p>
+
+  <p>I do tego właśnie jest ten program.</p>
+</div>
+
+<hr class="divider" style="max-width:900px;margin:0 auto 80px;">
+
+<!-- ═══ SEKCJA 3: TRANSFORMACJA ═══ -->
+<div class="page">
+  <div class="section-number">Sekcja 03</div>
+  <h2 class="section-title">Opis transformacji<br><em>po programie</em></h2>
+
+  <div class="transform-grid">
+    <div class="transform-col before">
+      <h4>Przed programem</h4>
+      <ul>
+        <li>Cykl: dieta–wpadka–wyrzuty–poniedziałek</li>
+        <li>Wieczorne napady podjadania</li>
+        <li>Stałe poczucie winy wokół jedzenia</li>
+        <li>Jedzenie jako jedyna forma ulgi</li>
+        <li>Poczucie, że coś jest z tobą nie tak</li>
+        <li>Myśl „i tak wszystko zepsułam"</li>
+        <li>Zmęczenie bez wyjścia</li>
+        <li>Strach przed wieczorem i kuchnią</li>
+      </ul>
+    </div>
+    <div class="transform-col after">
+      <h4>Po programie</h4>
+      <ul>
+        <li>Spokój wokół jedzenia — bez dramatów</li>
+        <li>Wieczory bez automatycznego sięgania</li>
+        <li>Rozumienie własnych emocji i potrzeb</li>
+        <li>Nowe strategie radzenia sobie ze stresem</li>
+        <li>Brak poczucia winy po „gorszym dniu"</li>
+        <li>Umiejętność wracania bez zaczynania od nowa</li>
+        <li>Prawdziwy odpoczynek wieczorem</li>
+        <li>Relacja z jedzeniem oparta na zrozumieniu</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="highlight">
+    <p><strong>Celem programu nie jest perfekcyjna dieta.</strong> Celem jest to, żebyś po gorszym dniu — zamiast mówić „zaczynam od poniedziałku" — powiedziała sobie z łagodnością: „Ok, to był trudny dzień. Jutro po prostu wracam do siebie." I żeby to naprawdę wystarczyło.</p>
+  </div>
+</div>
+
+<hr class="divider" style="max-width:900px;margin:0 auto 80px;">
+
+<!-- ═══ SEKCJA 4 & 5: DLA KOGO / NIE DLA KOGO ═══ -->
+<div class="page">
+  <div class="section-number">Sekcja 04</div>
+  <h2 class="section-title">Dla kogo jest<br><em>ten program?</em></h2>
+
+  <p>Ten program jest dla Ciebie, jeśli:</p>
+
+  <ul class="custom">
+    <li>Cały dzień pilnujesz się z jedzeniem, a wieczorem tracisz kontrolę — i nie rozumiesz dlaczego.</li>
+    <li>Masz za sobą dziesiątki prób, diet i „nowych początków od poniedziałku" — i masz tego dość.</li>
+    <li>Jesz wieczorem ze zmęczenia, nudy, napięcia, samotności lub po prostu dlatego, że nie potrafisz się zatrzymać.</li>
+    <li>Żyjesz z ciągłym poczuciem winy po jedzeniu i widzisz, że to niszczy twój nastrój i pewność siebie.</li>
+    <li>Jesteś przeciążona — pracą, domem, obowiązkami, rolami — i jedzenie to jedyna chwila tylko dla siebie.</li>
+    <li>Chcesz przestać walczyć z jedzeniem i zacząć po prostu żyć.</li>
+    <li>Czujesz, że problem nie jest w kaloriach — ale nie wiesz, gdzie naprawdę jest.</li>
+    <li>Jesteś gotowa na pracę — nie powierzchowną, ale prawdziwą, emocjonalną, głęboką.</li>
+  </ul>
+
+  <hr class="divider">
+
+  <div class="section-number">Sekcja 05</div>
+  <h2 class="section-title">Dla kogo <em>nie jest</em><br>ten program?</h2>
+
+  <ul class="custom">
+    <li>Nie jest dla Ciebie, jeśli szukasz gotowej diety, jadłospisu lub planu żywieniowego do ścisłego przestrzegania.</li>
+    <li>Nie jest dla Ciebie, jeśli chcesz szybkich efektów bez głębszej pracy nad sobą.</li>
+    <li>Nie jest dla Ciebie, jeśli oczekujesz, że ktoś powie ci „jedz to, nie jedz tamtego" i to wystarczy.</li>
+    <li>Nie jest dla Ciebie, jeśli nie jesteś gotowa na szczerość wobec siebie i otwartość w grupie.</li>
+    <li>Nie jest dla Ciebie, jeśli chcesz schudnąć w 30 dni kosztem czegokolwiek innego.</li>
+    <li>Nie jest dla Ciebie, jeśli zmagasz się z zaburzeniami odżywiania wymagającymi specjalistycznej opieki psychiatrycznej lub psychologicznej — w tym przypadku zachęcam do kontaktu z terapeutą ED i oferuję pomoc w znalezieniu odpowiedniego wsparcia.</li>
+  </ul>
+</div>
+
+<!-- ═══ SEKCJA 6: STRONA SPRZEDAŻOWA ═══ -->
+<div style="background: var(--charcoal); padding: 120px 0; margin: 80px 0;">
+  <div class="page" style="padding-top:0;padding-bottom:0;">
+    <div class="section-number" style="color:var(--dusty-rose);">Sekcja 06</div>
+    <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(36px,5vw,64px);font-weight:300;color:var(--cream);line-height:1.15;margin-bottom:24px;">Strona<br><em style="color:var(--dusty-rose);font-style:italic;">sprzedażowa</em></h2>
+    <p style="color:rgba(250,246,241,0.6);font-size:17px;">Kompletna, gotowa do użycia</p>
+  </div>
+</div>
+
+<div class="page">
+
+  <!-- NAGŁÓWEK -->
+  <div style="text-align:center;padding:60px 0;border-bottom:1px solid var(--border);">
+    <div class="section-number" style="text-align:center;">Nagłówek</div>
+    <h1 style="font-family:'Cormorant Garamond',serif;font-size:clamp(38px,5vw,68px);font-weight:300;line-height:1.15;margin-bottom:24px;">Masz dość<br>zaczynania od <em style="color:var(--dusty-rose);font-style:italic;">poniedziałku?</em></h1>
+    <p style="font-size:20px;color:var(--mid);max-width:600px;margin:0 auto 32px;line-height:1.7;">Ten program nie jest kolejną dietą. To koniec z cyklem diet, wyrzutów sumienia i wieczornego podjadania — raz na zawsze.</p>
+    <div style="display:inline-block;background:var(--dusty-rose);color:white;padding:16px 48px;font-size:13px;letter-spacing:2px;text-transform:uppercase;font-weight:500;">Zapisz się na program → 1 599 zł</div>
+  </div>
+
+  <!-- SEKCJA EMOCJONALNA -->
+  <div style="padding:80px 0;border-bottom:1px solid var(--border);">
+    <div class="section-number">Sekcja emocjonalna</div>
+    <h2 class="section-title">Znam Cię.<br><em>Naprawdę.</em></h2>
+
+    <p class="lead">Znam ten wieczór. Ten moment, w którym siedzisz na kanapie po całym dniu i nie wiesz już nic — tylko że jesteś zmęczona. I że chcesz coś słodkiego. Albo słonego. Albo czegokolwiek.</p>
+
+    <p>Znam ten głos w głowie, który mówi „tylko jeden kawałek". I ten, który zaraz potem mówi „i tak wszystko już zepsułaś". Znam to śniadanie, po którym postanawiasz zacząć od nowa. I tamten poniedziałek, który na zawsze jest w przyszłości.</p>
+
+    <p>Znam tę wstydliwą tajemnicę — że potrafisz gotować zdrowe rzeczy, że wiesz co jeść, że nie brakuje ci wiedzy. Tylko coś nie gra. I nie wiesz co. I to jest najgorsze — to poczucie, że sama siebie nie rozumiesz.</p>
+
+    <div class="emotional-block">
+      <p>Chcę ci powiedzieć jedną ważną rzecz: <strong>to nie jest twoja wina.</strong> Nie masz defektu. Nie jesteś słabą osobą. Twój mózg i ciało robią dokładnie to, do czego zostały nauczone. I można nauczyć je czegoś innego.</p>
+    </div>
+  </div>
+
+  <!-- DLACZEGO DIETY OD PONIEDZIAŁKU NIE DZIAŁAJĄ -->
+  <div style="padding:80px 0;border-bottom:1px solid var(--border);">
+    <div class="section-number">Dlaczego diety od poniedziałku nie działają</div>
+    <h2 class="section-title">Bo problem<br>nie jest w <em>jedzeniu.</em></h2>
+
+    <p>Diety od poniedziałku nie działają, bo zakładają, że problemem jest to co jesz. Więc zmieniasz to co jesz. Eliminujesz. Ograniczasz. Pilnujesz. I przez jakiś czas to nawet działa.</p>
+
+    <p>Ale nie zmieniasz <strong>dlaczego</strong> jesz. Nie zmieniasz tego, co w ciele i głowie uruchamia sięganie po jedzenie wtedy, gdy nie jesteś głodna. Nie uczysz się czytać swoich emocji. Nie budujesz innych strategii radzenia sobie ze zmęczeniem.</p>
+
+    <p>I dlatego wraca. Zawsze wraca. Nie dlatego, że jesteś nieodpowiedzialna. Dlatego, że nikt nie usunął źródła — tylko zakleił objaw plastrem.</p>
+
+    <div class="highlight">
+      <p><strong>Restrykcja rodzi bunt.</strong> Im bardziej zabraniasz sobie czegoś jedzeniowego, tym silniejszy staje się impuls, żeby to zjeść. To nie psychologia — to biologia. Twój mózg odbiera ograniczenie jako zagrożenie i aktywuje mechanizm przetrwania. Wieczorne napady to często bezpośredni skutek zbyt rygorystycznego dnia.</p>
+    </div>
+  </div>
+
+  <!-- ZMĘCZENIE PSYCHICZNE -->
+  <div style="padding:80px 0;border-bottom:1px solid var(--border);">
+    <div class="section-number">O zmęczeniu psychicznym</div>
+    <h2 class="section-title">Jesteś zmęczona.<br><em>Naprawdę zmęczona.</em></h2>
+
+    <p>Nie chodzi o to, że mało śpisz (choć pewnie też). Chodzi o ten specyficzny rodzaj zmęczenia, który zbiera się przez cały dzień decyzji. Decyzji o pracy. O dzieciach. O zakupach. O tym, co zjeść. O tym, co powiedzieć. O tym, jak zareagować.</p>
+
+    <p>Naukowcy nazywają to <strong>wyczerpaniem decyzyjnym</strong>. Twój mózg ma ograniczone zasoby samoregulacji. Kiedy używasz ich przez cały dzień — do pilnowania diety, do pracy, do bycia dobrą mamą/partnerką/pracownikiem — wieczorem zostaje ich bardzo mało.</p>
+
+    <p>I właśnie wieczorem, kiedy zasoby są na wyczerpaniu, Twój mózg szuka czegoś łatwego. Szybkiego. Przyjemnego. I sięga po jedzenie — bo to zna. Bo to zawsze działało.</p>
+
+    <div class="emotional-block">
+      <p>To nie jest słabość. To jest matematyka mózgu.<br>
+      Naszą pracą jest zmienić równanie — nie obwiniać cię za wynik.</p>
+    </div>
+  </div>
+
+  <!-- WIECZORNE PODJADANIE -->
+  <div style="padding:80px 0;border-bottom:1px solid var(--border);">
+    <div class="section-number">O wieczornym podjadaniu</div>
+    <h2 class="section-title">Dlaczego wieczorem?<br><em>Dlaczego zawsze wtedy?</em></h2>
+
+    <p>Wieczór to czas, gdy wszystkie maski opadają. Przestajesz być profesjonalistką, mamą, córką, żoną. Zostaje tylko Ty. I nagle nie wiesz jak z sobą być. Co z sobą zrobić. Jak się sobą zaopiekować.</p>
+
+    <p>Jedzenie wieczorem to często próba odpowiedzi na pytanie, na które nikt nie nauczył nas odpowiadać: <em>czego teraz naprawdę potrzebuję?</em></p>
+
+    <p>Potrzebujesz odpoczynku — ale nie wiesz jak naprawdę odpoczywać.<br>
+    Potrzebujesz spokoju — ale głowa się nie wyłącza.<br>
+    Potrzebujesz poczucia, że coś jest tylko dla ciebie — i jedzenie daje to natychmiast.<br>
+    Potrzebujesz nagrody za ciężki dzień — i szklanka wina albo tabliczka czekolady mówi: „Zasługujesz."</p>
+
+    <div class="highlight">
+      <p>Jedzenie wieczorem rzadko kiedy jest o głodzie. To jest komunikat. Twoje ciało i emocje mówią coś ważnego. Naszą pracą jest nauczyć się tego słuchać — i odpowiadać inaczej niż przez talerz.</p>
+    </div>
+  </div>
+
+  <!-- POCZUCIE WINY -->
+  <div style="padding:80px 0;border-bottom:1px solid var(--border);">
+    <div class="section-number">O poczuciu winy</div>
+    <h2 class="section-title">Poczucie winy<br>nie jest <em>motywacją.</em></h2>
+
+    <p>Być może ktoś kiedyś powiedział ci, że wyrzuty sumienia po jedzeniu to dobrze — bo motywują do zmiany. Kłamstwo.</p>
+
+    <p>Poczucie winy po jedzeniu nie motywuje. Paraliżuje. Sprawia, że myślisz „i tak wszystko zepsułam" i jesz dalej. Sprawia, że następnego ranka mówisz „zaczynam od nowa" — czyli znowu wchodzisz w restrykcje, które znowu skończą się wieczorną kompensacją.</p>
+
+    <p>Poczucie winy utrzymuje błędne koło. Jest jego paliwem, nie przeszkodą.</p>
+
+    <div class="emotional-block">
+      <p>W tym programie nie będziemy ci mówić, że powinnaś się wstydzić. Nie będziemy oceniać tego, co zjadłaś. Będziemy rozumieć — dlaczego zjadłaś, czego potrzebowałaś, i jak można to potrzeby zaspokoić inaczej. Bo właśnie z tego miejsca rodzi się prawdziwa, trwała zmiana.</p>
+    </div>
+  </div>
+
+  <!-- TO NIE BRAK SILNEJ WOLI -->
+  <div style="padding:80px 0;border-bottom:1px solid var(--border);">
+    <div class="section-number">To nie brak silnej woli</div>
+    <h2 class="section-title">Silna wola<br>to nie <em>rozwiązanie.</em></h2>
+
+    <p>Silna wola jest jak mięsień — można ją wyczerpać. I kiedy jest wyczerpana, nie działa. Koniec.</p>
+
+    <p>Przez cały dzień używasz silnej woli: żeby wstać, żeby nie powiedzieć tego co myślisz w pracy, żeby zachować spokój, żeby pilnować diety, żeby być cierpliwą. Wieczorem silna wola jest na zero. I sięgasz po jedzenie — nie dlatego, że jej nie masz, ale dlatego, że już jej użyłaś całej.</p>
+
+    <p>Badania pokazują, że ludzie z najlepszą kontrolą impulsów to nie ci, którzy mają „silniejszą wolę" — to ci, którzy <strong>zbudowali środowisko i nawyki, które nie wymagają ciągłego używania silnej woli.</strong></p>
+
+    <p>Właśnie tego uczymy się w tym programie.</p>
+  </div>
+
+  <!-- OPIS PROGRAMU -->
+  <div style="padding:80px 0;border-bottom:1px solid var(--border);">
+    <div class="section-number">Program</div>
+    <h2 class="section-title"><em>Koniec z wieczornym</em><br>podjadaniem</h2>
+    <p style="font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--light);">4 spotkania stacjonarne · Kameralna grupa · 1 599 zł</p>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;margin:48px 0;">
+      <div class="card">
+        <div class="card-num">Format</div>
+        <p style="color:var(--charcoal);font-weight:500;font-size:17px;">4 spotkania stacjonarne, każde 2–2,5 godziny</p>
+      </div>
+      <div class="card">
+        <div class="card-num">Grupa</div>
+        <p style="color:var(--charcoal);font-weight:500;font-size:17px;">Kameralna, maksymalnie 8–10 kobiet</p>
+      </div>
+      <div class="card">
+        <div class="card-num">Co dostajesz</div>
+        <p style="color:var(--charcoal);font-weight:500;font-size:17px;">Workbook premium, ćwiczenia, wsparcie między spotkaniami</p>
+      </div>
+    </div>
+
+    <p>To nie jest wykład o zdrowym odżywianiu. To jest głęboka, kameralna praca w grupie kobiet, które rozumieją siebie nawzajem — bo przeżywają to samo. Program łączy wiedzę z psychodietetyki z pracą emocjonalną, konkretnymi technikami samoregulacji i praktycznymi strategiami na wieczorne kryzysy.</p>
+    <p>Wychodzisz z każdego spotkania z czymś konkretnym. Nie z teorią — z narzędziem, które możesz użyć jeszcze tego samego wieczoru.</p>
+  </div>
+
+  <!-- EFEKTY -->
+  <div style="padding:80px 0;border-bottom:1px solid var(--border);">
+    <div class="section-number">Efekty</div>
+    <h2 class="section-title">Co zmieni się<br><em>po programie?</em></h2>
+
+    <ul class="custom">
+      <li><strong>Zrozumiesz</strong> — dlaczego wieczorami tracisz kontrolę i co naprawdę za tym stoi.</li>
+      <li><strong>Zmniejszysz</strong> częstotliwość i intensywność wieczornych napadów podjadania.</li>
+      <li><strong>Zbudujesz</strong> nowe strategie radzenia sobie ze zmęczeniem i napięciem — inne niż jedzenie.</li>
+      <li><strong>Uwolnisz się</strong> od poczucia winy i przestaniesz karać siebie za gorsze dni.</li>
+      <li><strong>Nauczysz się wracać</strong> po wpadce bez dramatów i bez zaczynania od nowa.</li>
+      <li><strong>Odbudujesz</strong> relację z jedzeniem — spokojną, bez lęku i obsesji.</li>
+      <li><strong>Wyjdziesz</strong> z błędnego koła diet i zaczniesz żyć bez podziału na dni „na diecie" i „poza dietą".</li>
+      <li><strong>Poczujesz się</strong> sobą — kobietą, która siebie rozumie i potrafi o siebie zadbać.</li>
+    </ul>
+  </div>
+
+  <!-- FAQ -->
+  <div style="padding:80px 0;border-bottom:1px solid var(--border);">
+    <div class="section-number">FAQ</div>
+    <h2 class="section-title">Pytania<br><em>i odpowiedzi</em></h2>
+
+    <div class="faq-item">
+      <div class="faq-q">Czy to jest dieta? Czy będziemy liczyć kalorie?</div>
+      <div class="faq-a">Absolutnie nie. Ten program nie jest o tym co jesz, ile jesz ani ile ważysz. Jest o tym dlaczego jesz w sposób, który cię nie służy — i jak to zmienić. Nie ma jadłospisów, nie ma ograniczeń, nie ma liczenia.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Czy muszę mówić o sobie w grupie?</div>
+      <div class="faq-a">Nikt nie jest zmuszany do niczego. Atmosfera spotkań jest budowana tak, żebyś czuła się bezpiecznie. Wiele kobiet jest zaskoczonych, jak szybko otwiera się w tej przestrzeni — bo nagle widzi, że inne rozumieją ją bez słów. Ale to zawsze twój wybór.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Co jeśli mam za sobą wiele diet i nic nie działało?</div>
+      <div class="faq-a">To jest właśnie powód, dla którego ten program może zadziałać. Diety nie działały, bo dotyczyły objawów, nie przyczyny. Tutaj zajmujemy się przyczyną.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Co jeśli znowu „wpadnę" podczas programu?</div>
+      <div class="faq-a">Gorsze dni są częścią procesu. Nie oczekujemy perfekcji — uczymy cię jak po gorszym dniu wracać, bez dramatów i bez zaczynania od nowa. To jest jedna z kluczowych umiejętności, które budujemy.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Czy muszę mieć duży problem, żeby się zapisać?</div>
+      <div class="faq-a">Jeśli rozpoznajesz siebie w opisie programu — to wystarczy. Nie musisz czekać aż będzie „wystarczająco źle". Wystarczy, że masz dość i chcesz czegoś innego.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">A jeśli mam poważniejszy problem z jedzeniem?</div>
+      <div class="faq-a">Jeśli zmagasz się z zaburzeniami odżywiania wymagającymi wsparcia psychiatrycznego lub psychoterapeutycznego — ten program nie zastąpi specjalistycznej pomocy. Chętnie pomogę Ci znaleźć odpowiedniego specjalistę.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Jak wygląda płatność?</div>
+      <div class="faq-a">Koszt programu to 1 599 zł. Możliwa jest płatność w dwóch ratach — skontaktuj się ze mną, żeby omówić szczegóły.</div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-block">
+    <h2>Jesteś gotowa<br>skończyć z poniedziałkami?</h2>
+    <p>Miejsca w kameralnej grupie są ograniczone. Jeśli czujesz, że ten program jest dla Ciebie — zaufaj temu uczuciu.</p>
+    <a href="#" class="cta-btn">Zapisz się na program</a>
+    <p style="margin-top:24px;font-size:13px;color:rgba(250,246,241,0.4);">Liczba miejsc ograniczona · 1 599 zł · 4 spotkania stacjonarne</p>
+  </div>
+
+</div>
+
+<!-- ═══ SEKCJA 7: SPOTKANIA ═══ -->
+<div class="page">
+  <div class="section-number">Sekcja 07</div>
+  <h2 class="section-title">Szczegółowy plan<br><em>4 spotkań</em></h2>
+
+  <!-- SPOTKANIE 1 -->
+  <div class="meeting">
+    <div class="meeting-header">
+      <div class="meeting-num">Spotkanie pierwsze</div>
+      <div class="meeting-title">„Skąd to się wzięło?" — Odkrywam siebie</div>
+    </div>
+    <div class="meeting-body">
+      <div class="meeting-section">
+        <h4>Co odkrywają uczestniczki</h4>
+        <ul class="custom">
+          <li>Swoje osobiste wzorce jedzenia — kiedy, co i dlaczego jedzą emocjonalnie.</li>
+          <li>Historię swojej relacji z jedzeniem — skąd pochodzi, kto i co ją ukształtował.</li>
+          <li>Że nie są same — że inne kobiety w grupie przeżywają dokładnie to samo.</li>
+          <li>Czym jest emocjonalne jedzenie i dlaczego jest tak powszechne wśród kobiet z wysokim poziomem odpowiedzialności.</li>
+        </ul>
+      </div>
+      <div class="meeting-section">
+        <h4>Ćwiczenia praktyczne</h4>
+        <ul class="custom">
+          <li><strong>Mapa moich jedzeniowych momentów</strong> — uczestniczki rysują swój typowy dzień i zaznaczają momenty, w których jedzenie pojawia się jako reakcja na emocje.</li>
+          <li><strong>Skala głodu i sytości</strong> — nauka rozróżniania głodu fizycznego od emocjonalnego.</li>
+          <li><strong>Moje pierwsze wspomnienia z jedzeniem</strong> — krótka refleksja o tym, co jedzenie znaczyło w domu, w rodzinie.</li>
+        </ul>
+      </div>
+      <div class="meeting-section">
+        <h4>Jakie emocje pojawiają się na tym spotkaniu</h4>
+        <p style="color:var(--mid);">Ulga — „Wreszcie ktoś rozumie." Zaskoczenie — „Nie wiedziałam, że tak wiele jestem w stanie o sobie powiedzieć." Czasem smutek — bo historia relacji z jedzeniem bywa bolesna. Prowadząca trzyma bezpieczną przestrzeń na wszystkie emocje.</p>
+      </div>
+      <div class="meeting-section">
+        <h4>Wnioski i zadanie domowe</h4>
+        <p style="color:var(--mid);">Przez tydzień uczestniczki prowadzą <strong>dziennik wieczoru</strong> — nie liczą kalorii, ale zapisują: co czułam wieczorem, co jadłam, czego naprawdę potrzebowałam. To surowe, uczciwe dane, z których będziemy korzystać na kolejnych spotkaniach.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SPOTKANIE 2 -->
+  <div class="meeting">
+    <div class="meeting-header">
+      <div class="meeting-num">Spotkanie drugie</div>
+      <div class="meeting-title">„Dlaczego właśnie wieczorem?" — Mechanizm i emocje</div>
+    </div>
+    <div class="meeting-body">
+      <div class="meeting-section">
+        <h4>Tematy spotkania</h4>
+        <ul class="custom">
+          <li>Jak działa mechanizm emocjonalnego jedzenia w mózgu — prosty, zrozumiały neuronaukowy model.</li>
+          <li>Wyczerpanie decyzyjne i dlaczego wieczór jest „godziną zero" dla samoregulacji.</li>
+          <li>Jaką funkcję pełni jedzenie wieczorem — nagroda, ukojenie, ucieczka, wypełnienie pustki?</li>
+          <li>Emocje za jedzeniem: zmęczenie, samotność, nuda, napięcie, frustracja — jak je rozpoznać.</li>
+        </ul>
+      </div>
+      <div class="meeting-section">
+        <h4>Ćwiczenia praktyczne</h4>
+        <ul class="custom">
+          <li><strong>Analiza dziennika wieczoru</strong> — czego naprawdę chciałam, kiedy sięgałam po jedzenie?</li>
+          <li><strong>Moje cztery wieczorne wyzwalacze</strong> — identyfikacja osobistych triggerów (konkretna godzina, sytuacja, osoba, emocja).</li>
+          <li><strong>Ciało-umysł-emocje</strong> — prosta technika skanowania ciała jako narzędzie rozpoznawania potrzeb.</li>
+          <li><strong>Moja lista potrzeb wieczornych</strong> — czego naprawdę potrzebuję wieczorem i jak to dostać bez jedzenia.</li>
+        </ul>
+      </div>
+      <div class="meeting-section">
+        <h4>Samoregulacja</h4>
+        <p style="color:var(--mid);">Uczymy się 3 technik natychmiastowej samoregulacji na moment kryzysu — prostych, możliwych do użycia w kuchni, przy lodówce, na kanapie z telefonem. Żadna z nich nie wymaga „silnej woli".</p>
+      </div>
+      <div class="meeting-section">
+        <h4>Wnioski i zadanie domowe</h4>
+        <p style="color:var(--mid);">Uczestniczki wypełniają <strong>mapę swoich wyzwalaczy</strong> i przez tydzień próbują jednej techniki samoregulacji. Nie muszą być perfekcyjne — mają obserwować i notować co działa.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SPOTKANIE 3 -->
+  <div class="meeting">
+    <div class="meeting-header">
+      <div class="meeting-num">Spotkanie trzecie</div>
+      <div class="meeting-title">„Co robię, kiedy coś idzie nie tak?" — Narzędzia na kryzysy</div>
+    </div>
+    <div class="meeting-body">
+      <div class="meeting-section">
+        <h4>Tematy spotkania</h4>
+        <ul class="custom">
+          <li>Jak zatrzymywać napady podjadania — techniki przerywania automatycznego sięgania.</li>
+          <li>Co robić zaraz po „wpadce" — jak nie wchodzić w spiralę wyrzutów sumienia.</li>
+          <li>Zasada „jednej wpadki" — jak nie rzucać wszystkiego po jednym gorszym wieczorze.</li>
+          <li>Jak budować wieczorny rytuał, który zastępuje podjadanie.</li>
+        </ul>
+      </div>
+      <div class="meeting-section">
+        <h4>Ćwiczenia praktyczne</h4>
+        <ul class="custom">
+          <li><strong>Mój rytuał awaryjny</strong> — każda uczestniczka tworzy swój osobisty plan na moment kryzysu wieczornego.</li>
+          <li><strong>Przerwa 10 minut</strong> — technika surfowania na fali impulsu bez poddawania się mu.</li>
+          <li><strong>List do siebie po gorszym dniu</strong> — ćwiczenie samowspółczucia jako antidotum na wyrzuty sumienia.</li>
+          <li><strong>Nowe wieczorne rytuały</strong> — projektowanie konkretnych, przyjemnych alternatyw dla wieczornego podjadania.</li>
+        </ul>
+      </div>
+      <div class="meeting-section">
+        <h4>Jak wracać do równowagi</h4>
+        <p style="color:var(--mid);">Kluczowa umiejętność: powrót bez dramatu. Uczestniczki ćwiczą zdanie, które mówią sobie po gorszym wieczorze — zamiast „zaczynam od poniedziałku". Budujemy język łagodności wobec siebie.</p>
+      </div>
+      <div class="meeting-section">
+        <h4>Wnioski i zadanie domowe</h4>
+        <p style="color:var(--mid);">Wdrożenie <strong>rytuału awaryjnego</strong> w praktyce. Obserwacja: co pomaga, co nie, co mogę dostosować. Zapisanie trzech momentów w tygodniu, kiedy udało mi się zatrzymać i wybrać inaczej.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SPOTKANIE 4 -->
+  <div class="meeting">
+    <div class="meeting-header">
+      <div class="meeting-num">Spotkanie czwarte</div>
+      <div class="meeting-title">„Kim jestem teraz?" — Utrwalanie i plan na przyszłość</div>
+    </div>
+    <div class="meeting-body">
+      <div class="meeting-section">
+        <h4>Tematy spotkania</h4>
+        <ul class="custom">
+          <li>Nowe schematy — co zmieniło się w myśleniu, w zachowaniu, w relacji z jedzeniem.</li>
+          <li>Spokój wokół jedzenia — jak wygląda życie bez podziału na „na diecie" i „poza dietą".</li>
+          <li>Jak utrzymać zmiany w długim czasie — bez perfekcjonizmu, z łagodnością.</li>
+          <li>Przyszłe wyzwania — święta, urlopy, stresowe okresy — jak nie wracać do starych schematów.</li>
+        </ul>
+      </div>
+      <div class="meeting-section">
+        <h4>Ćwiczenia praktyczne</h4>
+        <ul class="custom">
+          <li><strong>Mój manifest spokoju z jedzeniem</strong> — uczestniczki piszą deklarację tego, jak chcą żyć z jedzeniem.</li>
+          <li><strong>Mapa zasobów</strong> — co mam, do czego mogę sięgnąć w trudnych momentach.</li>
+          <li><strong>Plan na 30 dni po programie</strong> — konkretny, realistyczny, łagodny.</li>
+          <li><strong>Rytuał zamknięcia grupy</strong> — każda uczestniczka dzieli się jedną zmianą, którą zabiera ze sobą.</li>
+        </ul>
+      </div>
+      <div class="meeting-section">
+        <h4>Nowe schematy i plan na przyszłość</h4>
+        <p style="color:var(--mid);">Zamykamy program obrazem przyszłości — nie idealnej, ale prawdziwej. Kobiety wychodzą z jasnym wyobrażeniem tego, jak wygląda ich nowa relacja z jedzeniem i ze sobą. Z narzędziami. Z poczuciem, że naprawdę coś się zmieniło.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ SEKCJA 8: WORKBOOK ═══ -->
+<div style="background:var(--charcoal);padding:120px 0;margin:80px 0;">
+  <div class="page" style="padding-top:0;padding-bottom:0;">
+    <div class="section-number" style="color:var(--dusty-rose);">Sekcja 08</div>
+    <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(36px,5vw,56px);font-weight:300;color:var(--cream);line-height:1.2;margin-bottom:16px;">Workbook<br><em style="color:var(--dusty-rose);font-style:italic;">premium</em></h2>
+    <p style="color:rgba(250,246,241,0.6);font-size:17px;">Twoje narzędzie transformacji</p>
+  </div>
+</div>
+
+<div class="page">
+
+  <div class="workbook-section">
+    <h3>Rozdział 1 — Moja historia z jedzeniem</h3>
+    <div class="exercise-box">
+      <div class="exercise-label">Ćwiczenie refleksyjne</div>
+      <p style="font-size:15px;color:var(--mid);margin-bottom:16px;">Zamknij oczy i wróć myślami do domu, w którym dorastałaś. Jak wyglądało jedzenie? Czy było nagrodą? Pocieszeniem? Obowiązkiem? Tematem tabu? Napisz co pamiętasz, bez cenzurowania się.</p>
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+    </div>
+    <div class="exercise-box">
+      <div class="exercise-label">Pytania do refleksji</div>
+      <ul class="custom">
+        <li>Kto w mojej rodzinie jadł emocjonalnie? Co wtedy czułam?</li>
+        <li>Kiedy po raz pierwszy użyłam jedzenia, żeby poczuć się lepiej?</li>
+        <li>Jakie zdania o jedzeniu i ciele słyszałam w domu?</li>
+        <li>Jak moja historia wpływa na to, co robię dzisiaj wieczorami?</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="workbook-section">
+    <h3>Rozdział 2 — Moje wieczorne wyzwalacze</h3>
+    <div class="exercise-box">
+      <div class="exercise-label">Mapa wyzwalaczy</div>
+      <p style="font-size:15px;color:var(--mid);margin-bottom:16px;">Uzupełnij zdania. Nie myśl za długo — pierwsza odpowiedź jest najlepsza.</p>
+      <p style="font-size:14px;color:var(--mid);">Najczęściej sięgam po jedzenie wieczorem, kiedy czuję się: <span style="border-bottom:1px solid var(--border);display:inline-block;width:200px;">&nbsp;</span></p>
+      <p style="font-size:14px;color:var(--mid);margin-top:12px;">To zazwyczaj dzieje się, kiedy: <span style="border-bottom:1px solid var(--border);display:inline-block;width:240px;">&nbsp;</span></p>
+      <p style="font-size:14px;color:var(--mid);margin-top:12px;">Zanim sięgam po jedzenie, w moim ciele czuję: <span style="border-bottom:1px solid var(--border);display:inline-block;width:200px;">&nbsp;</span></p>
+      <p style="font-size:14px;color:var(--mid);margin-top:12px;">Po jedzeniu czuję: <span style="border-bottom:1px solid var(--border);display:inline-block;width:280px;">&nbsp;</span></p>
+      <p style="font-size:14px;color:var(--mid);margin-top:12px;">Czego naprawdę potrzebuję w tym momencie: <span style="border-bottom:1px solid var(--border);display:inline-block;width:200px;">&nbsp;</span></p>
+    </div>
+  </div>
+
+  <div class="workbook-section">
+    <h3>Dziennik emocji — Tygodniowy tracker wieczoru</h3>
+    <p style="color:var(--mid);font-size:15px;margin-bottom:24px;">Przez 7 wieczorów wypełniaj tę tabelkę. Cel: nie oceniać, nie zmieniać — tylko obserwować.</p>
+    <div style="overflow-x:auto;">
+      <table style="width:100%;border-collapse:collapse;font-size:14px;">
+        <tr style="background:var(--charcoal);color:var(--cream);">
+          <th style="padding:12px 16px;text-align:left;font-weight:400;font-size:11px;letter-spacing:2px;text-transform:uppercase;">Dzień</th>
+          <th style="padding:12px 16px;text-align:left;font-weight:400;font-size:11px;letter-spacing:2px;text-transform:uppercase;">Nastrój wieczorem (1-10)</th>
+          <th style="padding:12px 16px;text-align:left;font-weight:400;font-size:11px;letter-spacing:2px;text-transform:uppercase;">Co jadłam?</th>
+          <th style="padding:12px 16px;text-align:left;font-weight:400;font-size:11px;letter-spacing:2px;text-transform:uppercase;">Co czułam przed?</th>
+          <th style="padding:12px 16px;text-align:left;font-weight:400;font-size:11px;letter-spacing:2px;text-transform:uppercase;">Czego potrzebowałam?</th>
+        </tr>
+        <tr><td style="padding:14px 16px;border-bottom:1px solid var(--border);">Poniedziałek</td><td style="padding:14px 16px;border-bottom:1px solid var(--border);"></td><td style="padding:14px 16px;border-bottom:1px solid var(--border);"></td><td style="padding:14px 16px;border-bottom:1px solid var(--border);"></td><td style="padding:14px 16px;border-bottom:1px solid var(--border);"></td></tr>
+        <tr style="background:var(--warm-white);"><td style="padding:14px 16px;border-bottom:1px solid var(--border);">Wtorek</td><td style="padding:14px 16px;border-bottom:1px solid var(--border);"></td><td style="padding:14px 16px;border-bottom:1px solid var(--border);"></td><td style="padding:14px 16px;border-bottom:1px solid var(--border);"></td><td style="padding:14px 16px;border-bottom:1px solid var(--border);"></td></tr>
+        <tr><td style="padding:14px 16px;border-bottom:1px solid var(--border);">Środa</td><td style="padding:14px 16px;border-bottom:1px solid var(--border);"></td><td style="padding:14px 16px;border-bottom:1px solid var(--border);"></td><td style="padding:14px 16px;border-bottom:1px solid var(--border);"></td><td style="padding:14px 16px;border-bottom:1px solid var(--border);"></td></tr>
+        <tr style="background:var(--warm-white);"><td style="padding:14px 16px;border-bottom:1px solid var(--border);">Czwartek</td><td style="padding:14px 16px;border-bottom:1px solid var(--border);"></td><td style="padding:14px 16px;border-bottom:1px solid var(--border);"></td><td style="padding:14px 16px;border-bottom:1px solid var(--border);"></td><td style="padding:14px 16px;border-bottom:1px solid var(--border);"></td></tr>
+        <tr><td style="padding:14px 16px;border-bottom:1px solid var(--border);">Piątek</td><td style="padding:14px 16px;border-bottom:1px solid var(--border);"></td><td style="padding:14px 16px;border-bottom:1px solid var(--border);"></td><td style="padding:14px 16px;border-bottom:1px solid var(--border);"></td><td style="padding:14px 16px;border-bottom:1px solid var(--border);"></td></tr>
+        <tr style="background:var(--warm-white);"><td style="padding:14px 16px;border-bottom:1px solid var(--border);">Sobota</td><td style="padding:14px 16px;border-bottom:1px solid var(--border);"></td><td style="padding:14px 16px;border-bottom:1px solid var(--border);"></td><td style="padding:14px 16px;border-bottom:1px solid var(--border);"></td><td style="padding:14px 16px;border-bottom:1px solid var(--border);"></td></tr>
+        <tr><td style="padding:14px 16px;">Niedziela</td><td style="padding:14px 16px;"></td><td style="padding:14px 16px;"></td><td style="padding:14px 16px;"></td><td style="padding:14px 16px;"></td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="workbook-section">
+    <h3>Rytuał awaryjny na wieczorne podjadanie</h3>
+    <p style="color:var(--mid);font-size:15px;margin-bottom:24px;">Zaprojektuj swój osobisty plan działania na moment kryzysu. Wypełnij każdy krok.</p>
+
+    <div class="exercise-box">
+      <div class="exercise-label">Krok 1 — Zatrzymaj się (2 minuty)</div>
+      <p style="font-size:14px;color:var(--mid);">Zanim sięgnę po jedzenie, robię: <span style="border-bottom:1px solid var(--border);display:inline-block;width:300px;">&nbsp;</span></p>
+      <p style="font-size:14px;color:var(--mid);margin-top:12px;">Mówię sobie: <span style="border-bottom:1px solid var(--border);display:inline-block;width:340px;">&nbsp;</span></p>
+    </div>
+    <div class="exercise-box">
+      <div class="exercise-label">Krok 2 — Sprawdź co czujesz</div>
+      <p style="font-size:14px;color:var(--mid);">Zadaję sobie pytanie: Czego teraz naprawdę potrzebuję? Moje najczęstsze odpowiedzi to:</p>
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+    </div>
+    <div class="exercise-box">
+      <div class="exercise-label">Krok 3 — Moje alternatywy (lista gotowa PRZED kryzysem)</div>
+      <p style="font-size:14px;color:var(--mid);margin-bottom:12px;">Gdy potrzebuję odpoczynku: <span style="border-bottom:1px solid var(--border);display:inline-block;width:280px;">&nbsp;</span></p>
+      <p style="font-size:14px;color:var(--mid);">Gdy potrzebuję spokoju: <span style="border-bottom:1px solid var(--border);display:inline-block;width:288px;">&nbsp;</span></p>
+      <p style="font-size:14px;color:var(--mid);margin-top:12px;">Gdy potrzebuję nagrody: <span style="border-bottom:1px solid var(--border);display:inline-block;width:286px;">&nbsp;</span></p>
+      <p style="font-size:14px;color:var(--mid);margin-top:12px;">Gdy potrzebuję kontaktu z kimś: <span style="border-bottom:1px solid var(--border);display:inline-block;width:264px;">&nbsp;</span></p>
+    </div>
+    <div class="exercise-box">
+      <div class="exercise-label">Krok 4 — Moje zdanie na po gorszym wieczorze</div>
+      <p style="font-size:14px;color:var(--mid);">Napisz zdanie, które powiesz sobie jutro rano — ciepłe, bez oceny:</p>
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+    </div>
+
+    <div class="highlight" style="margin-top:32px;">
+      <p><strong>Checklist gotowości:</strong> Mój rytuał awaryjny jest zapisany i mam go pod ręką. Wiem co konkretnie zrobię w ciągu pierwszych 2 minut kryzysu. Mam 3–5 alternatyw gotowych dla różnych potrzeb. Wiem co powiem sobie po gorszym dniu — bez wyrzutów sumienia.</p>
+    </div>
+  </div>
+
+  <div class="workbook-section">
+    <h3>Plan działania na 30 dni po programie</h3>
+    <div class="exercise-box">
+      <div class="exercise-label">Moje 3 priorytety</div>
+      <p style="font-size:14px;color:var(--mid);">Trzy rzeczy, które chcę wdrożyć w życie po programie:</p>
+      <p style="font-size:14px;color:var(--mid);margin-top:12px;">1. <span style="border-bottom:1px solid var(--border);display:inline-block;width:380px;">&nbsp;</span></p>
+      <p style="font-size:14px;color:var(--mid);margin-top:12px;">2. <span style="border-bottom:1px solid var(--border);display:inline-block;width:380px;">&nbsp;</span></p>
+      <p style="font-size:14px;color:var(--mid);margin-top:12px;">3. <span style="border-bottom:1px solid var(--border);display:inline-block;width:380px;">&nbsp;</span></p>
+    </div>
+    <div class="exercise-box">
+      <div class="exercise-label">Mój manifest spokoju z jedzeniem</div>
+      <p style="font-size:14px;color:var(--mid);margin-bottom:16px;">Dokończ zdania:</p>
+      <p style="font-size:14px;color:var(--mid);">Chcę, żeby jedzenie w moim życiu było...</p>
+      <div class="write-line"></div>
+      <p style="font-size:14px;color:var(--mid);margin-top:12px;">Nie chcę już...</p>
+      <div class="write-line"></div>
+      <p style="font-size:14px;color:var(--mid);margin-top:12px;">Zasługuję na to, żeby...</p>
+      <div class="write-line"></div>
+      <p style="font-size:14px;color:var(--mid);margin-top:12px;">Kiedy przyjdzie gorszy dzień, powiem sobie...</p>
+      <div class="write-line"></div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ═══ SEKCJA 9: INSTAGRAM ═══ -->
+<div class="page">
+  <div class="section-number">Sekcja 09</div>
+  <h2 class="section-title">Posty Instagram,<br><em>rolki i stories</em></h2>
+
+  <h3 style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:400;margin-bottom:32px;color:var(--charcoal);">20 emocjonalnych postów Instagram</h3>
+
+  <div class="posts-grid">
+    <div class="post-card">
+      <div class="post-num">Post 01</div>
+      <div class="post-text">Nie zepsułaś dnia. Zepsułaś swoje wyobrażenie o perfekcyjnym dniu. To różnica, która zmienia wszystko.<br><br>Gorszy wieczór to nie katastrofa. To informacja. Twoje ciało i emocje próbują ci coś powiedzieć. Czy słuchasz?<br><br>Nie zaczynaj od poniedziałku. Zacznij od zrozumienia.<br><br>#psychodietetyka #emocjonalnyjedzenie #konieczdietami</div>
+    </div>
+    <div class="post-card">
+      <div class="post-num">Post 02</div>
+      <div class="post-text">Wieczorem wchodzisz do kuchni po wodę i wychodzisz z garścią chipsów.<br><br>Słyszysz to?<br>To nie brak silnej woli.<br>To zmęczony mózg szuka najszybszej drogi do ulgi.<br><br>I właśnie dlatego diety od poniedziałku nigdy nie działają — bo nie dotykają tego miejsca.<br><br>#wieczornepodjadanie #emocjonalnyjedzenie</div>
+    </div>
+    <div class="post-card">
+      <div class="post-num">Post 03</div>
+      <div class="post-text">Cały dzień dla wszystkich.<br>Wieczorem — tylko dla siebie.<br><br>I ta jedyna chwila dla siebie wygląda tak: kanapа, ciastka, poczucie winy.<br><br>Co jeśli ta chwila mogłaby wyglądać inaczej — bez wyrzutów sumienia? Bez jedzenia, którego potem żałujesz?<br><br>Właśnie o tym rozmawiamy na warsztacie.</div>
+    </div>
+    <div class="post-card">
+      <div class="post-num">Post 04</div>
+      <div class="post-text">"Jutro zaczynam od nowa."<br><br>Ile razy powiedziałaś to zdanie?<br>Ile razy naprawdę w to wierzyłaś?<br>I ile razy znowu skończyło się na tym samym wieczorze?<br><br>Problem nie jest w twoim poranku. Problem jest w tym, co nakręca ten wieczorny mechanizm. I można to zmienić — ale nie przez kolejną dietę.</div>
+    </div>
+    <div class="post-card">
+      <div class="post-num">Post 05</div>
+      <div class="post-text">Wiesz co jest najtrudniejsze?<br><br>Nie samo jedzenie wieczorem.<br>Najtrudniejsze jest to poczucie, że znowu sobie nie dałaś rady. Że innym jakoś wychodzi, a tobie nie. Że coś z tobą musi być nie tak.<br><br>Chcę żebyś wiedziała: nic z tobą nie jest nie tak. Masz nierozwiązany problem — i to można rozwiązać.</div>
+    </div>
+    <div class="post-card">
+      <div class="post-num">Post 06</div>
+      <div class="post-text">Zmęczenie psychiczne smakuje jak chipsy o 21:00.<br><br>Albo jak czekolada.<br>Albo jak jeszcze jeden kawałek ciasta, bo przecież i tak już...<br><br>Twoje ciało nie kłamie. Ono mówi ci że jest zmęczone. Że potrzebuje troski. Że chce czegoś dobrego.<br><br>Może czas zacząć go słuchać zamiast z nim walczyć.</div>
+    </div>
+    <div class="post-card">
+      <div class="post-num">Post 07</div>
+      <div class="post-text">Restrykcja rodzi bunt.<br><br>Im mocniej zabraniasz sobie czegoś przez cały dzień — tym silniejszy impuls wieczorem, żeby po to sięgnąć.<br><br>To nie brak charakteru. To biologia.<br><br>I właśnie dlatego diety od poniedziałku zawsze kończą się w ten sam wieczór.<br><br>#prawdaozjedzeniu #psychodietetyka</div>
+    </div>
+    <div class="post-card">
+      <div class="post-num">Post 08</div>
+      <div class="post-text">Wyobraź sobie wieczór bez dramatu wokół jedzenia.<br><br>Bez: "Zjesz czy nie zjesz?"<br>Bez: "A może jednak..."<br>Bez: "No i zjadłaś."<br><br>Wieczór, w którym po prostu jesteś. Odpoczywasz. Jesz jeśli chcesz, nie jesz jeśli nie chcesz. Bez negocjacji z własną głową.<br><br>To jest możliwe. Naprawdę.</div>
+    </div>
+    <div class="post-card">
+      <div class="post-num">Post 09</div>
+      <div class="post-text">Powiem ci sekret, którego nikt nie mówi przy diecie:<br><br>Poczucie winy po jedzeniu nie motywuje cię do zmiany.<br>Ono nakręca błędne koło.<br><br>Wina → "i tak wszystko zepsułam" → jem dalej → wina → poniedziałek → restrykcja → wina...<br><br>Wyjście z tego koła zaczyna się od zrozumienia, nie od kary.</div>
+    </div>
+    <div class="post-card">
+      <div class="post-num">Post 10</div>
+      <div class="post-text">Kiedy ostatnio zjadłaś wieczorem coś, czego potem żałowałaś?<br><br>A teraz: co czułaś PRZED tym?<br>Zmęczenie? Napięcie? Samotność? Nudę? Frustrację?<br><br>Jedzenie było odpowiedzią na emocję, nie na głód.<br><br>I to jest informacja, od której zaczyna się prawdziwa zmiana.</div>
+    </div>
+    <div class="post-card">
+      <div class="post-num">Post 11</div>
+      <div class="post-text">Mam dla ciebie jedno pytanie:<br><br>Czy chcesz przestać walczyć z jedzeniem?<br><br>Nie schudnąć (choć to może nastąpić).<br>Nie być perfekcyjna (bo nikt nie jest).<br><br>Po prostu — przestać myśleć o jedzeniu z lękiem. Żyć spokojniej. Zjeść i nie czuć się po tym winna.<br><br>Jeśli tak — to program jest dla ciebie.</div>
+    </div>
+    <div class="post-card">
+      <div class="post-num">Post 12</div>
+      <div class="post-text">Kobiety na moich warsztatach mówią jedną rzecz, która mnie wzrusza za każdym razem:<br><br>"Myślałam, że tylko ja tak mam."<br><br>Nie tylko ty.<br>Jesteś w tym razem z setkami kobiet, które cały dzień się starają i wieczorem tracą kontrolę i nie rozumieją dlaczego.<br><br>I wszystkie z was zasługują na zrozumienie — nie na kolejną dietę.</div>
+    </div>
+    <div class="post-card">
+      <div class="post-num">Post 13</div>
+      <div class="post-text">Nie pytaj: "Dlaczego znowu zjadłam?"<br><br>Zapytaj: "Czego potrzebowałam w tamtej chwili i jak mogę to dostać inaczej?"<br><br>Pierwsze pytanie prowadzi do wyrzutów sumienia.<br>Drugie — do zrozumienia i zmiany.<br><br>Mała różnica w słowach. Ogromna różnica w skutkach.<br><br>#samorozwoj #emocjonalnyjedzenie</div>
+    </div>
+    <div class="post-card">
+      <div class="post-num">Post 14</div>
+      <div class="post-text">Zdrowa relacja z jedzeniem nie wygląda tak:<br>✕ Liczysz każdą kalorię<br>✕ Odmawiam sobie wszystkiego co pyszne<br>✕ Czujesz się winna po każdym posiłku<br><br>Zdrowa relacja z jedzeniem wygląda tak:<br>✓ Jesz kiedy jesteś głodna<br>✓ Zatrzymujesz się kiedy jesteś syta<br>✓ Nie ma zakazanych produktów — jest świadomy wybór<br>✓ Gorszy dzień nie niszczy całego tygodnia</div>
+    </div>
+    <div class="post-card">
+      <div class="post-num">Post 15</div>
+      <div class="post-text">Co gdybyś jutro rano nie zaczynała "od nowa"?<br><br>Co gdybyś powiedziała sobie:<br>"Wczoraj był trudny dzień. Jestem człowiekiem. Dzisiaj po prostu wracam do siebie."<br><br>Nie z dramatem.<br>Nie z postanowieniem.<br>Nie od poniedziałku.<br><br>Po prostu — wracam.<br><br>Tego właśnie uczymy się razem.</div>
+    </div>
+    <div class="post-card">
+      <div class="post-num">Post 16</div>
+      <div class="post-text">Program „Koniec z wieczornym podjadaniem" startuje wkrótce.<br><br>4 spotkania stacjonarne.<br>Kameralna grupa.<br>Głęboka, emocjonalna praca z relacją z jedzeniem.<br><br>To nie jest dieta. To jest transformacja.<br><br>Jeśli rozpoznajesz siebie — napisz do mnie.<br>Opowiem ci wszystko.</div>
+    </div>
+    <div class="post-card">
+      <div class="post-num">Post 17</div>
+      <div class="post-text">Siła woli jest jak bateria.<br><br>Rano masz 100%.<br>Po pracy — może 40%.<br>Po kolacji i dzieciach — 10%.<br>O 21:00 — 0%.<br><br>I wtedy sięgasz po chipsy.<br><br>Nie dlatego, że jesteś słaba.<br>Dlatego, że bateria jest pusta.<br><br>Nasza praca to nauczyć się ładować baterię inaczej niż jedzeniem.</div>
+    </div>
+    <div class="post-card">
+      <div class="post-num">Post 18</div>
+      <div class="post-text">Szczery wpis:<br><br>Wielu moich klientek wstyd przyznać, że wieczorami tracą kontrolę nad jedzeniem. Boją się, że zostaną ocenione.<br><br>Na moich spotkaniach nie ma oceniania. Jest zrozumienie. Jest bezpieczeństwo. Jest grupa kobiet, które rozumieją cię bez słów.<br><br>I jest zmiana. Prawdziwa.</div>
+    </div>
+    <div class="post-card">
+      <div class="post-num">Post 19</div>
+      <div class="post-text">Trzy rzeczy, których nie mówię swoim klientkom:<br><br>✕ "Musisz mieć więcej silnej woli"<br>✕ "Wystarczy się bardziej postarać"<br>✕ "To kwestia motywacji"<br><br>Mówię im natomiast:<br>✓ "Twój mózg robi dokładnie to, do czego go nauczono"<br>✓ "Możemy go nauczyć czegoś innego"<br>✓ "Zasługujesz na spokój — nie na walkę"</div>
+    </div>
+    <div class="post-card">
+      <div class="post-num">Post 20</div>
+      <div class="post-text">Marzysz o wieczorze bez wyrzutów sumienia?<br><br>Bez głosu w głowie który liczy i ocenia i pyta "dlaczego znowu?"<br><br>To jest możliwe. Nie przez kolejną dietę. Przez zrozumienie tego, co napędza wieczorny mechanizm — i zmianę go od środka.<br><br>Zapisz się na program. Pierwsze miejsca już zajęte — zostało kilka.<br><br>Link w bio ↑</div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <h3 style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:400;margin-bottom:32px;color:var(--charcoal);">10 pomysłów na rolki (Reels)</h3>
+
+  <ol class="custom">
+    <li><strong>„Dzień w moim mózgu"</strong> — animacja lub tekst pokazujący jak wygląda dzień samoregulacji: od porannego postanowienia do wieczornej wpadki. Bez oceniania — tylko mapa.</li>
+    <li><strong>„Co naprawdę jesz wieczorem"</strong> — lista emocji (zmęczenie, samotność, nuda, stres) z pytaniem: „Czy to naprawdę smakuje jak chipsy?"</li>
+    <li><strong>„Bateria silnej woli"</strong> — prosta animacja ładującej się i rozładowującej baterii przez cały dzień kobiety.</li>
+    <li><strong>„5 zdań, które zmieniają wszystko"</strong> — szybki montaż 5 zdań, które mówisz sobie po gorszym dniu zamiast „zaczynam od poniedziałku".</li>
+    <li><strong>„Znasz to uczucie?"</strong> — tekst przewijający się na ekranie: „Cały dzień pilnujesz się. Wieczorem tracisz kontrolę. Rano mówisz od poniedziałku. Powtarza się od lat." → „Mam dla ciebie coś innego."</li>
+    <li><strong>„Twój rytuał awaryjny"</strong> — 60-sekundowy poradnik: co robić w ciągu pierwszych 2 minut gdy czujesz, że zaraz sięgniesz po jedzenie ze stresu.</li>
+    <li><strong>„Przed i po — ale nie o wadze"</strong> — przed: myśli, emocje, wieczory. Po: spokój, brak wyrzutów sumienia, rozumienie siebie.</li>
+    <li><strong>„Dlaczego poniedziałki nie działają"</strong> — szybkie wideo: 3 powody w 60 sekundach, dlaczego cykl diet od poniedziałku jest skazany na niepowodzenie.</li>
+    <li><strong>„Co mówię sobie po gorszym dniu"</strong> — osobiste nagranie prowadzącej: autentyczne, emocjonalne, bez makijażu i filtrów.</li>
+    <li><strong>„Zaproszenie"</strong> — ciepłe, bezpośrednie nagranie do kamery: „Jeśli rozpoznałaś siebie — jest program dla ciebie. I nie musisz już być sama z tym."</li>
+  </ol>
+
+  <hr class="divider">
+
+  <h3 style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:400;margin-bottom:32px;color:var(--charcoal);">20 mocnych hooków</h3>
+
+  <div class="hook-item">Masz dość zaczynania od poniedziałku?</div>
+  <div class="hook-item">Cały dzień pilnujesz się. Wieczorem tracisz kontrolę. Słyszysz to?</div>
+  <div class="hook-item">To nie brak silnej woli. To wyczerpany mózg.</div>
+  <div class="hook-item">Powiem ci dlaczego diety od poniedziałku nigdy nie zadziałają.</div>
+  <div class="hook-item">Ile razy powiedziałaś sobie „jutro zaczynam od nowa"?</div>
+  <div class="hook-item">Wieczorne jedzenie to nie głód. To komunikat.</div>
+  <div class="hook-item">Wyrzuty sumienia nie motywują. Nakręcają błędne koło.</div>
+  <div class="hook-item">Co by się zmieniło, gdybyś rozumiała dlaczego jesz?</div>
+  <div class="hook-item">Restrykcja dzień. Bunt wieczór. Wyrzuty sumienia noc. Diety rano. Znasz to?</div>
+  <div class="hook-item">Kobiety, które przyszły na mój warsztat, powiedziały jedno: „Myślałam, że tylko ja tak mam."</div>
+  <div class="hook-item">Wyobraź sobie wieczór bez dramatu wokół jedzenia.</div>
+  <div class="hook-item">Twoje ciało nie jest twoim wrogiem. Nigdy nie było.</div>
+  <div class="hook-item">Zmęczenie psychiczne smakuje jak chipsy o 21:00.</div>
+  <div class="hook-item">Problem nie jest w twoim poniedziałku. Problem jest w twoim wieczorze.</div>
+  <div class="hook-item">Nie zepsułaś dnia. Zepsułaś swoje wyobrażenie o perfekcyjnym dniu.</div>
+  <div class="hook-item">Czy wiesz, czego naprawdę szukasz w tej otwartej lodówce?</div>
+  <div class="hook-item">Silna wola jest jak bateria — i twoja jest pusta wieczorem. To nie twoja wina.</div>
+  <div class="hook-item">Dla kogo ten post: cały dzień zdrowo, wieczorem znowu podjadasz.</div>
+  <div class="hook-item">Koniec z dietami. Czas na zrozumienie.</div>
+  <div class="hook-item">Ten program nie jest o jedzeniu. Jest o tobie.</div>
+
+  <hr class="divider">
+
+  <h3 style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:400;margin-bottom:32px;color:var(--charcoal);">10 stories sprzedażowych</h3>
+
+  <div class="story-card">
+    <div class="story-day">Story 01 — Poniedziałek</div>
+    <div class="story-text">Zacznę od pytania. Odpowiedz szczerze, sama przed sobą.<br><br>Czy zdarza ci się jeść wieczorem — nie dlatego, że jesteś głodna, ale dlatego że jesteś zmęczona, napięta albo po prostu nie wiesz co z sobą zrobić?<br><br>Jeśli tak — to story jest dla ciebie. Jutro opowiem ci dlaczego tak się dzieje.</div>
+    <div class="story-cta">→ Przesuń w górę, żeby odpowiedzieć</div>
+  </div>
+
+  <div class="story-card">
+    <div class="story-day">Story 02 — Wtorek</div>
+    <div class="story-text">Wczoraj zapytałam, czy jesz wieczorem ze zmęczenia. Dostałam mnóstwo odpowiedzi. Większość brzmiała tak: „Tak, i nie wiem dlaczego. I nie wiem jak to zmienić."<br><br>Właśnie po to tworzę program. Żeby wreszcie to zmienić. Nie przez kolejną dietę — przez zrozumienie mechanizmu, który za tym stoi.<br><br>Jutro opowiem więcej.</div>
+    <div class="story-cta">→ Obserwuj moje konto, żeby nie przegapić</div>
+  </div>
+
+  <div class="story-card">
+    <div class="story-day">Story 03 — Środa</div>
+    <div class="story-text">Dlaczego wieczorem tracisz kontrolę nad jedzeniem?<br><br>Twój mózg przez cały dzień używa zasobów samoregulacji. Na pracę. Na dom. Na pilnowanie diety. Na bycie dobrą mamą, partnerką, pracownikiem.<br><br>Wieczorem — tych zasobów nie ma. I mózg sięga po to co zna. Po jedzenie.<br><br>To nie słabość. To matematyka.</div>
+    <div class="story-cta">→ Zapisz to story — będziesz do niego wracać</div>
+  </div>
+
+  <div class="story-card">
+    <div class="story-day">Story 04 — Czwartek</div>
+    <div class="story-text">Program „Koniec z wieczornym podjadaniem" — co to jest?<br><br>4 spotkania stacjonarne. Kameralna grupa. Głęboka praca z tym, dlaczego jesz emocjonalnie — i jak to zmienić bez restrykcji i wyrzutów sumienia.<br><br>Nie dieta. Nie jadłospis. Transformacja relacji z jedzeniem.<br><br>1 599 zł. Kilka miejsc zostało.</div>
+    <div class="story-cta">→ Przesuń w górę, żeby się dowiedzieć więcej</div>
+  </div>
+
+  <div class="story-card">
+    <div class="story-day">Story 05 — Piątek</div>
+    <div class="story-text">Kobiety, które były na moich poprzednich warsztatach mówią:<br><br>„Pierwszy raz w życiu czuję, że rozumiem siebie."<br>„Wieczory wyglądają teraz zupełnie inaczej."<br>„Przestałam się bić o każdą wpadkę."<br><br>Chcę tego samego dla ciebie.</div>
+    <div class="story-cta">→ Napisz do mnie „CHCĘ WIEDZIEĆ WIĘCEJ"</div>
+  </div>
+
+  <div class="story-card">
+    <div class="story-day">Story 06 — Sobota</div>
+    <div class="story-text">Szczera rozmowa o tym, dla kogo NIE jest ten program:<br><br>Nie jest dla Ciebie, jeśli szukasz diety cud i szybkich efektów. Nie jest dla Ciebie, jeśli nie jesteś gotowa na prawdziwą pracę z emocjami.<br><br>Jest dla Ciebie, jeśli masz DOŚĆ. Naprawdę dość. I chcesz czegoś innego — głębszego, prawdziwego.</div>
+    <div class="story-cta">→ Czy to jesteś ty? Napisz mi.</div>
+  </div>
+
+  <div class="story-card">
+    <div class="story-day">Story 07 — Niedziela</div>
+    <div class="story-text">Jutro poniedziałek. Ile razy mówiłaś sobie: od jutra zaczynam na nowo?<br><br>Co jeśli nie musisz już zaczynać?<br>Co jeśli możesz po prostu — być? I jeść spokojnie? I żyć bez podziału na dni na diecie i dni poza dietą?<br><br>To nie utopia. To cel programu.</div>
+    <div class="story-cta">→ Ostatnie miejsca — link poniżej</div>
+  </div>
+
+  <div class="story-card">
+    <div class="story-day">Story 08 — FAQ</div>
+    <div class="story-text">Najczęstsze pytania:<br><br>"Czy będziemy liczyć kalorie?" — Nie.<br>"Czy muszę być szczupła, żeby przyjść?" — Nie.<br>"Czy to terapia?" — To warsztat psychodietetyczny — inny niż terapia, uzupełniający pracę z psychologiem.<br>"Czy to działa?" — To zależy od twojego zaangażowania. Nie obiecuję cudu. Obiecuję narzędzia i zrozumienie.</div>
+    <div class="story-cta">→ Masz więcej pytań? Napisz do mnie</div>
+  </div>
+
+  <div class="story-card">
+    <div class="story-day">Story 09 — Ostatnie miejsca</div>
+    <div class="story-text">Zostały ostatnie miejsca w kameralnej grupie.<br><br>Kameralna celowo — żebyś czuła się bezpiecznie. Żeby każda z was miała przestrzeń. Żeby to nie był anonimowy kurs, ale prawdziwe spotkanie.<br><br>Jeśli czujesz, że to jest dla ciebie — nie czekaj do poniedziałku.</div>
+    <div class="story-cta">→ Zapisz się przez link w bio</div>
+  </div>
+
+  <div class="story-card">
+    <div class="story-day">Story 10 — Zamknięcie</div>
+    <div class="story-text">Ostatnie miejsce w tej edycji.<br><br>Jeśli przez ostatnie dni czytałaś moje stories i myślałaś "to chyba o mnie" — to jest twój znak.<br><br>Zapisanie się nie zobowiązuje cię do bycia perfekcyjną uczestniczką. Zobowiązuje cię tylko do tego, żebyś przyszła. I była szczera ze sobą.<br><br>Reszta wydarzy się sama.</div>
+    <div class="story-cta">→ Napisz JESTEM — i zarezerwuję dla ciebie miejsce</div>
+  </div>
+
+</div>
+
+<!-- ═══ SEKCJA 10: POST SPRZEDAŻOWY ═══ -->
+<div class="page">
+  <div class="section-number">Sekcja 10</div>
+  <h2 class="section-title">Emocjonalny post<br><em>sprzedażowy</em></h2>
+
+  <div class="workbook-section">
+    <div class="emotional-block" style="margin-top:0;">
+      <p style="font-size:18px;font-weight:500;color:var(--charcoal);">Mam dość życia od poniedziałku do poniedziałku.</p>
+    </div>
+
+    <p>Masz dość?</p>
+    <p>Masz dość tego, że wstajesz rano z postanowieniem i kładziesz się spać z wyrzutami sumienia. Że każdy tydzień zaczyna się od "teraz to już naprawdę zaczynam" i kończy wieczorną kanapą i paczką czegoś, czego potem żałujesz.</p>
+    <p>Masz dość liczenia. Przeliczania. Pilnowania. Zabraniania sobie. Nagradzania się. Karania się. Obiecywania sobie. Znowu i znowu i znowu.</p>
+    <p>Masz dość tego głosu w głowie, który nigdy nie milknie. Który pyta czy powinnaś, ocenia że nie powinnaś, mówi że zaczynam od poniedziałku, i zaczyna to samo w kółko.</p>
+    <p>Chcę żebyś wiedziała jedną rzecz:</p>
+    <p><strong>Nie jesteś słaba. Nie masz defektu. Nie brakuje ci czegoś, co inne kobiety mają, a ty nie.</strong></p>
+    <p>Masz nierozwiązany problem — i to jest coś zupełnie innego. Problem ma rozwiązanie. Słabość — miałaby cię z tym zostawić na zawsze. A ja nie wierzę, że to jest twoja historia.</p>
+    <p>Tworzę program dla kobiet, które mają DOŚĆ. Cztery spotkania stacjonarne, kameralna grupa, głęboka praca z tym co napędza wieczorny mechanizm — bez diet, bez restrykcji, bez poczucia winy.</p>
+    <p>Nie obiecuję cudu. Obiecuję narzędzia, zrozumienie i przestrzeń, w której wreszcie ktoś naprawdę rozumie twój problem.</p>
+    <p>Jeśli to czytasz i myślisz "to chyba o mnie" — napisz do mnie.<br>
+    Powiedz: <strong>„Mam dość"</strong>.<br>
+    I zaczniemy razem.</p>
+    <p style="color:var(--dusty-rose);font-style:italic;">Program: Koniec z wieczornym podjadaniem — 1 599 zł · Link w bio</p>
+  </div>
+</div>
+
+<!-- ═══ SEKCJA 11: REKLAMY FB/IG ═══ -->
+<div class="page">
+  <div class="section-number">Sekcja 11</div>
+  <h2 class="section-title">Reklamy<br><em>Facebook / Instagram Ads</em></h2>
+
+  <div class="card" style="margin-bottom:40px;">
+    <div class="card-num">Wersja krótka (do 150 słów)</div>
+    <div class="card-title">Cały dzień się pilnujesz. Wieczorem tracisz kontrolę. To nie jest kwestia silnej woli.</div>
+    <p>Wieczorne podjadanie to nie brak dyscypliny — to wyczerpany mózg szukający ulgi. I żadna dieta od poniedziałku tego nie zmieni.</p>
+    <p>Program „Koniec z wieczornym podjadaniem" to 4 spotkania stacjonarne dla kobiet, które mają dość błędnego koła diet i wyrzutów sumienia.</p>
+    <p>Bez liczenia kalorii. Bez restrykcji. Bez oceniania.<br>
+    Z prawdziwym zrozumieniem i konkretnymi narzędziami na wieczorne kryzysy.</p>
+    <p><strong>1 599 zł · Kameralna grupa · Kliknij, żeby dowiedzieć się więcej.</strong></p>
+  </div>
+
+  <div class="card">
+    <div class="card-num">Wersja długa (do 500 słów)</div>
+    <div class="card-title">Jeśli codziennie zaczynasz od postanowienia i kończysz na wyrzutach sumienia — ten post jest dla Ciebie.</div>
+    <p>Znam ten wieczór. Wchodzisz do kuchni po wodę. Wychodzisz z chipsami. Albo siedzisz na kanapie i sięgasz po czekoladę — jeden kawałek, potem drugi, potem „i tak wszystko już zepsułam".</p>
+    <p>I znowu to uczucie. Ciężkie, znajome. Wyrzuty sumienia. Postanowienie. Od poniedziałku znowu.</p>
+    <p>Przez lata próbowałaś różnych diet. Wiedziałaś co jeść. Wiedziałaś jak. I wieczorami i tak podjadałaś. I nie rozumiałaś dlaczego.</p>
+    <p>Chcę ci powiedzieć coś ważnego: <strong>to nie twoja wina. To nierozwiązany mechanizm.</strong></p>
+    <p>Wieczorne jedzenie to często odpowiedź na emocje — zmęczenie, napięcie, samotność, brak przestrzeni dla siebie. Twój mózg nauczył się, że jedzenie przynosi ulgę. I robi to automatycznie — szczególnie wieczorami, kiedy zasoby samoregulacji są wyczerpane.</p>
+    <p>Żadna dieta tego nie zmieni. Bo diety dotyczą tego CO jesz — nie DLACZEGO.</p>
+    <p><strong>Program „Koniec z wieczornym podjadaniem"</strong> to 4 spotkania stacjonarne dla kobiet, które chcą wyjść z błędnego koła diet, wyrzutów sumienia i wieczornych napadów.</p>
+    <p>Na tych spotkaniach:<br>
+    → Zrozumiesz mechanizm emocjonalnego jedzenia<br>
+    → Odkryjesz swoje osobiste wyzwalacze wieczornych napadów<br>
+    → Zbudujesz nowe strategie radzenia ze zmęczeniem i napięciem<br>
+    → Nauczysz się wracać po gorszym dniu — bez dramatów i bez poniedziałków<br>
+    → Odbudujesz spokojną relację z jedzeniem</p>
+    <p>Bez diety. Bez restrykcji. Bez oceniania. Z pełnym zrozumieniem i ciepłem.</p>
+    <p>Kameralna grupa (max 8–10 kobiet). 4 spotkania po 2–2,5 godziny. Workbook premium. Wsparcie emocjonalne.</p>
+    <p><strong>1 599 zł</strong></p>
+    <p>Kliknij „Dowiedz się więcej" — i przeczytaj wszystko o programie. Jeśli rozpoznasz siebie w opisie — to jest dla Ciebie.</p>
+  </div>
+</div>
+
+<!-- ═══ SEKCJA 12: WYDARZENIE FB ═══ -->
+<div class="page">
+  <div class="section-number">Sekcja 12</div>
+  <h2 class="section-title">Opis wydarzenia<br><em>na Facebook</em></h2>
+
+  <div class="workbook-section">
+    <h3>KONIEC Z WIECZORNYM PODJADANIEM</h3>
+    <p style="font-style:italic;color:var(--dusty-rose);">Jak przestać zaczynać dietę od poniedziałku i odzyskać kontrolę nad jedzeniem</p>
+    <p><strong>Program transformacyjny dla kobiet · 4 spotkania stacjonarne</strong></p>
+
+    <p>Cały dzień pilnujesz się z jedzeniem. Wieczorem tracisz kontrolę. Rano zaczynasz od nowa. I tak w kółko — od lat.</p>
+    <p>Masz dość? Ja też miałam dość patrzenia, jak mądrym, świadomym kobietom wmawia się, że problemem jest ich silna wola. Że potrzebują kolejnej diety, kolejnego jadłospisu, kolejnego poniedziałku.</p>
+    <p><strong>Dlatego stworzyłam ten program.</strong></p>
+
+    <p>━━━━━━━━━━━━━━━━━━━━━━━━</p>
+    <p><strong>CO TO JEST?</strong></p>
+    <p>4 spotkania stacjonarne w kameralnej grupie (max 8–10 kobiet), poświęcone głębokiej pracy z emocjonalnym jedzeniem i wieczornym podjadaniem. To nie jest kurs dietetyczny. To transformacja relacji z jedzeniem i ze sobą.</p>
+
+    <p><strong>CO ROBIMY?</strong><br>
+    → Odkrywamy mechanizm emocjonalnego jedzenia<br>
+    → Identyfikujemy osobiste wyzwalacze wieczornych napadów<br>
+    → Budujemy nowe strategie radzenia ze zmęczeniem i stresem<br>
+    → Uczymy się wracać po gorszym dniu bez dramatów<br>
+    → Odbudowujemy spokojną relację z jedzeniem</p>
+
+    <p><strong>CZEGO NIE ROBIMY?</strong><br>
+    → Nie liczymy kalorii<br>
+    → Nie tworzymy restrykcyjnych jadłospisów<br>
+    → Nie oceniamy i nie wstydzimy<br>
+    → Nie obiecujemy szybkiej utraty kilogramów</p>
+
+    <p><strong>DLA KOGO?</strong><br>
+    Dla kobiet, które cały dzień się pilnują z jedzeniem i wieczorem tracą kontrolę. Które mają za sobą wiele diet i mają dość. Które chcą rozumieć siebie — nie walczyć ze sobą.</p>
+
+    <p>━━━━━━━━━━━━━━━━━━━━━━━━</p>
+    <p><strong>SZCZEGÓŁY:</strong><br>
+    📍 [Miejsce spotkań]<br>
+    📅 [Daty spotkań]<br>
+    ⏱ Każde spotkanie: 2–2,5 godziny<br>
+    👥 Kameralna grupa: max 8–10 kobiet<br>
+    💛 Cena: 1 599 zł<br>
+    📚 W cenie: workbook premium, ćwiczenia, wsparcie między spotkaniami</p>
+
+    <p><strong>ZAPISY:</strong><br>
+    Napisz prywatną wiadomość lub kliknij „Chcę wziąć udział" pod tym wydarzeniem. Odezwę się do każdej z was osobiście.<br><br>Liczba miejsc ograniczona.</p>
+  </div>
+</div>
+
+<!-- ═══ SEKCJA 13: WIADOMOŚĆ PRYWATNA ═══ -->
+<div class="page">
+  <div class="section-number">Sekcja 13</div>
+  <h2 class="section-title">Wiadomość prywatna<br><em>„To chyba o mnie..."</em></h2>
+
+  <div class="workbook-section">
+    <p>Hej ☀️</p>
+    <p>Cieszę się, że napisałaś — naprawdę.</p>
+    <p>Kiedy ktoś pisze „to chyba o mnie", wiem, że to nie jest przypadkowe. Że coś w tym tekście dotknęło czegoś prawdziwego. I że być może jest w tym trochę ulgi — że ktoś w końcu opisał to tak, żebyś poczuła się rozumiana, a nie oceniana.</p>
+    <p>Mogę zapytać — co rozpoznałaś? Co było to „twoje" w tym, co napisałam?</p>
+    <p>Pytam, bo chcę wiedzieć, z czym się zmagasz — żebyś mogła ocenić, czy ten program naprawdę jest dla Ciebie. I żebyś miała wszystkie informacje zanim podejmiesz decyzję.</p>
+    <p>Powiem ci od razu: <strong>to nie jest program dla każdej kobiety.</strong> Zależy mi na tym, żeby trafiał do tych, którym naprawdę może pomóc. Dlatego nie „sprzedaję" miejsc — rozmawiam.</p>
+    <p>Jeśli masz ochotę — powiedz mi jak wygląda twój typowy wieczór. Nie musisz tego ładnie opisywać ani się tłumaczyć. Możesz napisać chaos — to też jest cenna informacja.</p>
+    <p>Czekam.</p>
+    <p style="color:var(--dusty-rose);font-style:italic;">Z ciepłem,<br>[Imię prowadzącej]</p>
+  </div>
+</div>
+
+<!-- ═══ SEKCJA 14: SILNA WOLA ═══ -->
+<div class="page">
+  <div class="section-number">Sekcja 14</div>
+  <h2 class="section-title">Dlaczego problem nie jest<br><em>w twojej silnej woli</em></h2>
+
+  <p class="lead">„Gdybym miała silniejszą wolę, nie jadłabym tych rzeczy." To zdanie słyszę często. I za każdym razem chcę, żeby kobiety, które je mówią, naprawdę to usłyszały: to nieprawda.</p>
+
+  <p>Silna wola to nie cecha charakteru. To ograniczony zasób — jak bateria, jak zbiornik wody, jak fundusz, z którego wypłacasz cały dzień. I tak jak każdy zasób — wyczerpuje się.</p>
+
+  <p>Badania psychologiczne pokazują, że samokontrola funkcjonuje podobnie do mięśnia: można ją ćwiczyć, ale też można ją wyczerpać. Kiedy mięsień jest zmęczony — drży. Kiedy samokontrola jest wyczerpana — odpuszczasz. I właśnie wieczorem — po całym dniu decyzji, napięć, obowiązków i ról — samokontrola jest na wyczerpaniu.</p>
+
+  <p>To nie jest słabość moralna. To fizjologia.</p>
+
+  <div class="highlight">
+    <p>Osoby, które wydają nam się „zdyscyplinowane", nie mają więcej silnej woli. Mają lepiej zbudowane środowisko i nawyki, które nie wymagają ciągłego jej używania. To jest właśnie to, czego uczymy się w programie — nie jak „mieć więcej silnej woli", ale jak przestać jej potrzebować w każdym trudnym momencie.</p>
+  </div>
+
+  <p>Poza tym: im mocniej zabraniasz sobie czegoś przez cały dzień — tym silniejszy impuls żeby po to sięgnąć wieczorem. To mechanizm psychologiczny zwany efektem odbicia (rebound effect). Twój mózg obsesyjnie wraca do tego, co jest zakazane. Dlatego im bardziej rygorystyczna dieta — tym bardziej prawdopodobny wieczorny napad.</p>
+
+  <p>To błędne koło nie ma nic wspólnego z twoim charakterem. Ma wszystko wspólnie z tym, jak działa ludzki mózg.</p>
+
+  <p>I można to zmienić — nie przez większy wysiłek woli, ale przez zmianę mechanizmu.</p>
+</div>
+
+<!-- ═══ SEKCJA 15: DLACZEGO JEM WIECZOREM ═══ -->
+<div class="page">
+  <div class="section-number">Sekcja 15</div>
+  <h2 class="section-title">Dlaczego wieczorem jem<br><em>mimo że nie jestem głodna?</em></h2>
+
+  <p class="lead">To jest pytanie, które zadaje sobie wiele kobiet — często z frustracją, często z wstydem. Dlaczego? Przecież jadłam kolację. Przecież nie jestem głodna. Dlaczego wracam do kuchni?</p>
+
+  <p>Odpowiedź jest prosta i złożona jednocześnie: <strong>bo jedzenie spełnia funkcję, która nie ma nic wspólnego z głodem.</strong></p>
+
+  <p>Wieczór to szczególna pora doby. To czas, gdy struktura dnia opada. Obowiązki są (mniej lub bardziej) wykonane. Role, które grałaś przez cały dzień — mama, pracownik, partnerka, córka — na chwilę schodzą. Zostaje tylko Ty.</p>
+
+  <p>I często okazuje się, że z samą sobą nie wiesz co zrobić. Bo nikt cię nie nauczył jak z sobą być. Jak prawdziwie odpoczywać. Jak zatroszczyć się o siebie bez jedzenia, zakupów, scrollowania.</p>
+
+  <p>Jedzenie wieczorem może być:</p>
+
+  <ul class="custom">
+    <li><strong>Nagrodą</strong> — bo całą dobę dbałaś o innych i jedzenie mówi ci: „Zasługujesz na coś dobrego."</li>
+    <li><strong>Ulgą</strong> — bo napięcie emocjonalne ma gdzieś ujście i jedzenie przynosi chwilowe rozluźnienie.</li>
+    <li><strong>Wypełnieniem pustki</strong> — bo wieczorna cisza jest trudna do zniesienia.</li>
+    <li><strong>Ucieczką od myśli</strong> — bo kiedy jesz, nie musisz myśleć o tym, co cię niepokoi.</li>
+    <li><strong>Rytuałem przyjemności</strong> — bo to jedyna chwila „tylko dla siebie" w całym dniu.</li>
+    <li><strong>Kompensacją restrykcji</strong> — bo całą dobę sobie odmawiałaś i ciało domaga się czego zabronionego.</li>
+  </ul>
+
+  <div class="emotional-block">
+    <p>Żaden z tych powodów nie czyni cię słabą ani złą. Każdy z nich jest komunikatem — od ciała, od emocji, od zmęczonego umysłu, który nie ma innego sposobu żeby powiedzieć: <em>potrzebuję czegoś.</em></p>
+    <p>Naszą pracą jest nauczyć się słuchać tego komunikatu — i odpowiadać na niego w sposób, który naprawdę pomaga.</p>
+  </div>
+</div>
+
+<!-- ═══ SEKCJA 16: 30 ZDAŃ ═══ -->
+<div class="page">
+  <div class="section-number">Sekcja 16</div>
+  <h2 class="section-title">30 zdań wspierających<br><em>po gorszym dniu</em></h2>
+  <p style="color:var(--mid);margin-bottom:40px;">Kiedy chcesz powiedzieć sobie „zaczynam od poniedziałku" — zamiast tego powiedz sobie jedno z tych zdań.</p>
+
+  <div class="support-grid">
+    <div class="support-card">Jeden gorszy wieczór nie przekreśla całego tygodnia. Jutro wracam — bez dramatu.</div>
+    <div class="support-card">Jestem człowiekiem, nie algorytmem. Gorsze dni są częścią życia, nie dowodem na moją słabość.</div>
+    <div class="support-card">Nie zaczynam od nowa. Kontynuuję — z jedną lekcją więcej.</div>
+    <div class="support-card">To, co zjadłam dziś wieczorem, nie definiuje kim jestem ani dokąd zmierzam.</div>
+    <div class="support-card">Mój mózg był zmęczony i szukał ulgi. To zrozumiałe. Jutro spróbuję inaczej.</div>
+    <div class="support-card">Zamiast pytać „dlaczego znowu?" — zapytam „czego potrzebowałam?" To mądrzejsze pytanie.</div>
+    <div class="support-card">Perfekcja nie jest celem. Postęp jest. A postęp ma swoje gorsze dni.</div>
+    <div class="support-card">Jutro nie jest „nowym początkiem" — jest po prostu jutrem. I to wystarczy.</div>
+    <div class="support-card">Nie karzę się za to, że jestem ludzka. Uczę się, jak o siebie zadbać.</div>
+    <div class="support-card">Poczucie winy nie zmienia przeszłości. Łagodność wobec siebie zmienia przyszłość.</div>
+    <div class="support-card">Moje ciało nie jest moim wrogiem. Dzisiaj było zmęczone. Jutro znowu będę je słuchać.</div>
+    <div class="support-card">Jeden krok do tyłu, dwa do przodu — to wciąż jest postęp.</div>
+    <div class="support-card">To co się stało dziś wieczorem nie jest katastrofą. Jest informacją. Co czułam? Czego potrzebowałam?</div>
+    <div class="support-card">Jestem kobietą, która się uczy. Uczenie się oznacza czasem błędy. I to jest całkowicie w porządku.</div>
+    <div class="support-card">Jutro wstanę i po prostu wrócę do siebie. Bez dramatu, bez kary, bez specjalnego planu naprawczego.</div>
+    <div class="support-card">Mogę być dla siebie tak dobra jak byłabym dla przyjaciółki. Co powiedziałabym jej po takim wieczorze?</div>
+    <div class="support-card">Nie ma dnia zerowego, od którego trzeba zaczynać. Jest tylko dzisiaj i jutro.</div>
+    <div class="support-card">Ten gorszy wieczór to część procesu — nie jego koniec.</div>
+    <div class="support-card">Zamiast wyrzutów sumienia — ciekawość. Co mogę jutro zrobić inaczej?</div>
+    <div class="support-card">Zasługuję na dobranoc bez wyrzutów sumienia. Kładę się spać i tyle.</div>
+    <div class="support-card">Moje postanowienie z poranku wciąż obowiązuje — jeden wieczór go nie kasuje.</div>
+    <div class="support-card">Byłam dzisiaj zmęczona. Nie słaba — zmęczona. To różnica.</div>
+    <div class="support-card">Nie muszę być perfekcyjna, żeby zasługiwać na zmianę. Wystarczy, że wracam.</div>
+    <div class="support-card">Każdy powrót po gorszym dniu to sukces. Wróciłam. To jest moje osiągnięcie na dziś.</div>
+    <div class="support-card">Liczą się miesiące, nie wieczory. W perspektywie miesiąca ten wieczór jest jednym z trzydziestu.</div>
+    <div class="support-card">Mój proces nie przebiega po linii prostej. I to jest normalne. Nikt nie idzie w górę bez zjazdów.</div>
+    <div class="support-card">Co jutro rano zrobię, żeby zadbać o siebie? Jeden mały krok. Tylko jeden.</div>
+    <div class="support-card">Nie jestem dietą. Jestem kobietą, która uczy się żyć w zgodzie z sobą. Dziś był trudniejszy dzień w tej nauce.</div>
+    <div class="support-card">Wyrzuty sumienia skończyły się tu. Jutro wstaję jako kobieta, która się uczy — nie jako kobieta, która znowu zawiodła.</div>
+    <div class="support-card">Dałam z siebie dziś wszystko. I może to właśnie dlatego wieczorem byłam na wyczerpaniu. Zasługuję na odpoczynek, nie na karę.</div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div style="background:var(--charcoal);padding:80px 40px;text-align:center;margin-top:80px;">
+  <div style="font-family:'Cormorant Garamond',serif;font-size:32px;color:var(--cream);font-weight:300;margin-bottom:16px;">
+    Koniec z wieczornym <em style="color:var(--dusty-rose);font-style:italic;">podjadaniem</em>
+  </div>
+  <p style="color:rgba(250,246,241,0.5);font-size:13px;letter-spacing:2px;text-transform:uppercase;max-width:600px;margin:0 auto;">
+    Program transformacyjny premium · 4 spotkania stacjonarne · 1 599 zł<br>
+    Kameralna grupa · Workbook premium · Wsparcie emocjonalne
+  </p>
+  <div style="margin-top:48px;width:60px;height:1px;background:var(--dusty-rose);margin-left:auto;margin-right:auto;"></div>
+  <p style="margin-top:24px;color:rgba(250,246,241,0.3);font-size:12px;">Kompletna oferta premium — wszelkie prawa zastrzeżone</p>
+</div>
+
+</body>
+</html>
